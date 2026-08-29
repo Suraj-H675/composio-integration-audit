@@ -1,0 +1,333 @@
+{
+  "version": 2,
+  "calibration_only": true,
+  "assignment_hint_required": true,
+  "verification_policy": {"minimum_source_disjoint_rate": 0.7, "source_disjoint_applies_when_alternate_first_party_source_exists": true},
+  "correction_log": [
+    {"app":"Salesforce","field":"technical_buildability","previous_value":"partially","current_value":"yes","reason":"API and official MCP interfaces are technically usable today; admin setup is tracked separately."},
+    {"app":"Notion","field":"production_access","previous_value":"self_serve_trial","current_value":"self_serve_free","reason":"First-party quickstart documents creating an internal connection and retrieving an API token directly; public connection review is for Marketplace listing, not basic API use."},
+    {"app":"GitHub","field":"vendor_official_mcp","previous_value":"unknown","current_value":true,"reason":"GitHub documentation identifies its MCP server as provided and maintained by GitHub."},
+    {"app":"Stripe","field":"vendor_mcp_stage","previous_value":"unknown","current_value":"public_preview","reason":"Current Stripe MCP documentation labels the server Public preview."},
+    {"app":"iPayX","field":"technical_buildability","previous_value":"limited","current_value":"yes","reason":"The API and native MCP are technically usable today; free-tier limits are commercial friction, not interface inability."},
+    {"app":"Otter AI","field":"technical_buildability","previous_value":"limited","current_value":"yes","reason":"The vendor documents a usable hosted OAuth MCP server; support-led access is tracked separately."},
+    {"app":"Mermaid CLI","field":"credential_access","previous_value":"unknown","current_value":"not_applicable","reason":"The official project is a local CLI/Node package and does not describe account credentials."},
+    {"app":"Paygent Connect","field":"identity","previous_value":"gopaygent.com","current_value":"unresolved","reason":"The candidate has the product name but no first-party evidence reconciling it with the assignment's NMI-powered hint."}
+  ],
+  "apps": [
+    {
+      "id":"salesforce","app":"Salesforce","category":"crm_sales","group":"straightforward","assignment_hint":"Salesforce CRM platform","identity_options":[{"id":"salesforce-platform","vendor":"Salesforce","product":"Salesforce","canonical_url":"https://www.salesforce.com/","expected_hosts":["salesforce.com"],"source_ids":["sf-quickstart","sf-oauth"],"patterns":["Salesforce","REST API"],"hint_patterns":["Salesforce"],"rationale":"First-party developer documentation identifies Salesforce and its Connect REST API."}],
+      "sources":[
+        {"id":"sf-quickstart","url":"https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html","source_type":"official_api_docs","expected_hosts":["salesforce.com"],"roles":["research"]},
+        {"id":"sf-oauth","url":"https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html","source_type":"official_auth_docs","expected_hosts":["salesforce.com"],"roles":["research","verify"]},
+        {"id":"sf-mcp","url":"https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html","source_type":"official_api_docs","expected_hosts":["salesforce.com"],"roles":["verify"]},
+        {"id":"sf-mcp-setup","url":"https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/setup-overview.html","source_type":"official_auth_docs","expected_hosts":["salesforce.com"],"roles":["verify"]},
+        {"id":"sf-headless-beta","url":"https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/headless-360-mcp.html","source_type":"official_api_docs","expected_hosts":["salesforce.com"],"roles":["research","verify"]},
+        {"id":"sf-create-eca","url":"https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/create-external-client-app.html","source_type":"official_auth_docs","expected_hosts":["salesforce.com"],"roles":["verify"]},
+        {"id":"sf-client-connection","url":"https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/client-connection-overview.html","source_type":"official_api_docs","expected_hosts":["salesforce.com"],"roles":["verify"]}
+      ],
+      "research_rules":[
+        {"field":"description","value":"Salesforce is a cloud CRM platform with APIs for data, automation, and connected applications.","source_ids":["sf-quickstart"],"support_patterns":["Connect REST API"]},
+        {"field":"auth_methods","value":["oauth2","oauth2_pkce"],"source_ids":["sf-oauth","sf-mcp-setup"],"support_patterns":["OAuth"],"require_patterns":["PKCE"]},
+        {"field":"primary_auth","value":"oauth2","source_ids":["sf-oauth"],"support_patterns":["OAuth"]},
+        {"field":"credential_access","value":"self_serve_free","source_ids":["sf-quickstart"],"support_patterns":["Developer Edition provides a free"]},
+        {"field":"sandbox_access","value":"self_serve_free","source_ids":["sf-quickstart"],"support_patterns":["testing and development"]},
+        {"field":"public_api_available","value":"yes","source_ids":["sf-quickstart"],"support_patterns":["Connect REST API"]},
+        {"field":"api_styles","value":["rest"],"source_ids":["sf-quickstart"],"support_patterns":["REST API"]},
+        {"field":"api_breadth","value":"broad","source_ids":["sf-mcp"],"support_patterns":["SObject Operations","data, assets, and logic"]},
+        {"field":"vendor_official_mcp","value":true,"source_ids":["sf-headless-beta"],"support_patterns":["Headless 360 MCP Server"]},
+        {"field":"vendor_mcp_stage","value":"beta","source_ids":["sf-headless-beta"],"support_patterns":["Headless 360 MCP Server (Beta)","Beta Service"]},
+        {"field":"technical_buildability","value":"yes","source_ids":["sf-headless-beta"],"support_patterns":["Headless 360 MCP Server"]},
+        {"field":"setup_friction","value":"admin_configuration","source_ids":["sf-create-eca"],"support_patterns":["System Administrator","External Client App"]},
+        {"field":"main_blocker","value":"none","source_ids":["sf-headless-beta"],"support_patterns":["Headless 360 MCP Server"]}
+      ],
+      "verification_rules":[
+        {"field":"identity","source_ids":["sf-mcp"],"support_patterns":["Salesforce","MCP"],"supported_value":"Salesforce","contradiction_patterns":["different vendor"]},
+        {"field":"auth_methods","source_ids":["sf-create-eca"],"support_patterns":["OAuth","External Client App"],"supported_value":["oauth2","oauth2_pkce"],"contradiction_patterns":["API key only"]},
+        {"field":"production_access","source_ids":["sf-headless-beta"],"support_patterns":["production"],"supported_value":"unknown","contradiction_patterns":["production credentials are self[- ]serve"]},
+        {"field":"vendor_official_mcp","source_ids":["sf-client-connection"],"support_patterns":["Salesforce Hosted MCP Server","OAuth 2.0"],"supported_value":true,"contradiction_patterns":["not available"]},
+        {"field":"technical_buildability","source_ids":["sf-mcp-setup"],"support_patterns":["External Client App","System Administrator"],"supported_value":"yes","contradiction_patterns":["cannot be built"]}
+      ]
+    },
+    {
+      "id":"github","app":"GitHub","category":"developer_tools","group":"straightforward","assignment_hint":"GitHub developer platform","identity_options":[{"id":"github-platform","vendor":"GitHub","product":"GitHub","canonical_url":"https://github.com/","expected_hosts":["github.com","githubcopilot.com"],"source_ids":["gh-rest","gh-auth"],"patterns":["GitHub","REST API"],"hint_patterns":["GitHub"],"rationale":"GitHub documentation identifies the REST platform and authentication options."}],
+      "sources":[
+        {"id":"gh-rest","url":"https://docs.github.com/en/rest/about-the-rest-api","source_type":"official_api_docs","expected_hosts":["github.com"],"roles":["research"]},
+        {"id":"gh-auth","url":"https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api","source_type":"official_auth_docs","expected_hosts":["github.com"],"roles":["research"]},
+        {"id":"gh-graphql","url":"https://docs.github.com/en/graphql/overview/about-the-graphql-api","source_type":"official_api_docs","expected_hosts":["github.com"],"roles":["verify"]},
+        {"id":"gh-webhooks","url":"https://docs.github.com/en/webhooks/about-webhooks","source_type":"official_api_docs","expected_hosts":["github.com"],"roles":["verify"]},
+        {"id":"gh-mcp-docs","url":"https://docs.github.com/en/copilot/concepts/context/mcp","source_type":"official_product_docs","expected_hosts":["github.com"],"roles":["research","verify"]}
+      ],
+      "research_rules":[
+        {"field":"description","value":"GitHub is a software development platform with repositories, collaboration, automation, and code-hosting APIs.","source_ids":["gh-rest"],"support_patterns":["REST API"]},
+        {"field":"auth_methods","value":["personal_access_token","oauth2"],"source_ids":["gh-auth"],"support_patterns":["personal access token","OAuth app"],"require_patterns":["GitHub App"]},
+        {"field":"primary_auth","value":"personal_access_token","source_ids":["gh-auth"],"support_patterns":["fine-grained personal access token"]},
+        {"field":"credential_access","value":"self_serve_free","source_ids":["gh-auth"],"support_patterns":["personal access token"]},
+        {"field":"production_access","value":"self_serve_free","source_ids":["gh-auth"],"support_patterns":["Create a personal access token"]},
+        {"field":"public_api_available","value":"yes","source_ids":["gh-rest"],"support_patterns":["REST API"]},
+        {"field":"api_styles","value":["rest","graphql"],"source_ids":["gh-rest","gh-graphql"],"support_patterns":["REST API","GraphQL API"],"require_patterns":["GraphQL API"]},
+        {"field":"api_breadth","value":"broad","source_ids":["gh-rest"],"support_patterns":["REST API","endpoints"]},
+        {"field":"webhooks","value":"yes","source_ids":["gh-webhooks"],"support_patterns":["Webhooks"]},
+        {"field":"vendor_official_mcp","value":true,"source_ids":["gh-mcp-docs"],"support_patterns":["provided and maintained by GitHub"]},
+        {"field":"vendor_mcp_stage","value":"unknown","source_ids":["gh-mcp-docs"],"support_patterns":["GitHub MCP"]},
+        {"field":"technical_buildability","value":"yes","source_ids":["gh-mcp-docs"],"support_patterns":["manage issues","pull requests"]},
+        {"field":"commercial_friction","value":"none","source_ids":["gh-auth"],"support_patterns":["personal access token"]},
+        {"field":"setup_friction","value":"none","source_ids":["gh-mcp-docs"],"support_patterns":["MCP server"]},
+        {"field":"main_blocker","value":"none","source_ids":["gh-mcp-docs"],"support_patterns":["provided and maintained by GitHub"]}
+      ],
+      "verification_rules":[
+        {"field":"identity","source_ids":["gh-graphql"],"support_patterns":["GitHub","GraphQL"],"supported_value":"GitHub","contradiction_patterns":["different vendor"]},
+        {"field":"auth_methods","source_ids":["gh-auth"],"support_patterns":["GitHub App","personal access token"],"supported_value":["personal_access_token","oauth2"],"contradiction_patterns":["API key only"]},
+        {"field":"production_access","source_ids":["gh-auth"],"support_patterns":["personal access token"],"supported_value":"self_serve_free","contradiction_patterns":["contact sales required"]},
+        {"field":"vendor_official_mcp","source_ids":["gh-mcp-docs"],"support_patterns":["provided and maintained by GitHub"],"supported_value":true,"contradiction_patterns":["community-only"]},
+        {"field":"technical_buildability","source_ids":["gh-mcp-docs"],"support_patterns":["connects AI tools directly to GitHub"],"supported_value":"yes","contradiction_patterns":["not usable"]}
+      ]
+    },
+    {
+      "id":"stripe","app":"Stripe","category":"finance_payments","group":"straightforward","assignment_hint":"Stripe payments platform","identity_options":[{"id":"stripe-payments","vendor":"Stripe","product":"Stripe","canonical_url":"https://stripe.com/","expected_hosts":["stripe.com"],"source_ids":["stripe-api","stripe-keys"],"patterns":["Stripe","API"],"hint_patterns":["Stripe"],"rationale":"Stripe documentation identifies its API and payment infrastructure."}],
+      "sources":[
+        {"id":"stripe-api","url":"https://docs.stripe.com/api","source_type":"official_api_docs","expected_hosts":["stripe.com"],"roles":["research"]},
+        {"id":"stripe-keys","url":"https://docs.stripe.com/keys","source_type":"official_auth_docs","expected_hosts":["stripe.com"],"roles":["research"]},
+        {"id":"stripe-webhooks","url":"https://docs.stripe.com/webhooks","source_type":"official_api_docs","expected_hosts":["stripe.com"],"roles":["verify"]},
+        {"id":"stripe-mcp","url":"https://docs.stripe.com/mcp","source_type":"official_api_docs","expected_hosts":["stripe.com"],"roles":["research","verify"]}
+      ],
+      "research_rules":[
+        {"field":"description","value":"Stripe is a payments platform with APIs for accepting payments, billing, and financial operations.","source_ids":["stripe-api"],"support_patterns":["Stripe API"]},
+        {"field":"auth_methods","value":["api_key","oauth2"],"source_ids":["stripe-keys","stripe-mcp"],"support_patterns":["API keys","OAuth"],"require_patterns":["OAuth"]},
+        {"field":"primary_auth","value":"api_key","source_ids":["stripe-keys"],"support_patterns":["API keys to authenticate API requests"]},
+        {"field":"credential_access","value":"self_serve_free","source_ids":["stripe-keys"],"support_patterns":["API keys"]},
+        {"field":"sandbox_access","value":"self_serve_free","source_ids":["stripe-keys"],"support_patterns":["sandbox","test keys"]},
+        {"field":"production_access","value":"self_serve_free","source_ids":["stripe-keys"],"support_patterns":["live mode keys"]},
+        {"field":"public_api_available","value":"yes","source_ids":["stripe-api"],"support_patterns":["API reference"]},
+        {"field":"api_styles","value":["rest"],"source_ids":["stripe-api"],"support_patterns":["api.stripe.com"]},
+        {"field":"api_breadth","value":"broad","source_ids":["stripe-api"],"support_patterns":["Customers","Subscriptions"],"require_patterns":["Customers","Subscriptions"]},
+        {"field":"webhooks","value":"yes","source_ids":["stripe-webhooks"],"support_patterns":["webhook endpoint"]},
+        {"field":"vendor_official_mcp","value":true,"source_ids":["stripe-mcp"],"support_patterns":["Stripe MCP server"]},
+        {"field":"vendor_mcp_stage","value":"public_preview","source_ids":["stripe-mcp"],"support_patterns":["Public preview"]},
+        {"field":"technical_buildability","value":"yes","source_ids":["stripe-mcp"],"support_patterns":["Read data with any Stripe API","Write data with any Stripe API"],"require_patterns":["Read data with any Stripe API","Write data with any Stripe API"]},
+        {"field":"commercial_friction","value":"usage_pricing","source_ids":["stripe-api"],"support_patterns":["pricing"]},
+        {"field":"setup_friction","value":"oauth_configuration","source_ids":["stripe-mcp"],"support_patterns":["OAuth consent page"]},
+        {"field":"main_blocker","value":"none","source_ids":["stripe-mcp"],"support_patterns":["Stripe MCP server"]}
+      ],
+      "verification_rules":[
+        {"field":"identity","source_ids":["stripe-keys"],"support_patterns":["Stripe","API keys"],"supported_value":"Stripe","contradiction_patterns":["different vendor"]},
+        {"field":"auth_methods","source_ids":["stripe-mcp"],"support_patterns":["OAuth","API key"],"supported_value":["api_key","oauth2"],"contradiction_patterns":["API key only"]},
+        {"field":"production_access","source_ids":["stripe-keys"],"support_patterns":["live mode keys"],"supported_value":"self_serve_free","contradiction_patterns":["contact sales required"]},
+        {"field":"vendor_official_mcp","source_ids":["stripe-mcp"],"support_patterns":["Stripe MCP server"],"supported_value":true,"contradiction_patterns":["community server only"]},
+        {"field":"technical_buildability","source_ids":["stripe-mcp"],"support_patterns":["Write data with any Stripe API"],"supported_value":"yes","contradiction_patterns":["read-only"]}
+      ]
+    },
+    {
+      "id":"notion","app":"Notion","category":"productivity","group":"straightforward","assignment_hint":"Notion workspace platform","identity_options":[{"id":"notion-workspace","vendor":"Notion","product":"Notion","canonical_url":"https://www.notion.so/","expected_hosts":["notion.com","notion.so"],"source_ids":["notion-intro","notion-auth"],"patterns":["Notion API","connection"],"hint_patterns":["Notion"],"rationale":"Notion's developer documentation identifies the API and workspace connection model."}],
+      "sources":[
+        {"id":"notion-intro","url":"https://developers.notion.com/reference/intro","source_type":"official_api_docs","expected_hosts":["notion.com"],"roles":["research"]},
+        {"id":"notion-auth","url":"https://developers.notion.com/guides/get-started/authorization","source_type":"official_auth_docs","expected_hosts":["notion.com"],"roles":["research","verify"]},
+        {"id":"notion-quickstart","url":"https://developers.notion.com/guides/get-started/quick-start","source_type":"official_product_docs","expected_hosts":["notion.com"],"roles":["research","verify"]},
+        {"id":"notion-webhooks","url":"https://developers.notion.com/reference/webhooks","source_type":"official_api_docs","expected_hosts":["notion.com"],"roles":["verify"]},
+        {"id":"notion-mcp","url":"https://developers.notion.com/guides/mcp/get-started-with-mcp","source_type":"official_api_docs","expected_hosts":["notion.com"],"roles":["research","verify"]},
+        {"id":"notion-mcp-client","url":"https://developers.notion.com/guides/mcp/build-mcp-client","source_type":"official_api_docs","expected_hosts":["notion.com"],"roles":["research","verify"]}
+      ],
+      "research_rules":[
+        {"field":"description","value":"Notion is a workspace platform whose API exposes pages, databases, users, and connections.","source_ids":["notion-intro"],"support_patterns":["Notion API"]},
+        {"field":"auth_methods","value":["bearer_token","oauth2","oauth2_pkce"],"source_ids":["notion-auth","notion-mcp","notion-mcp-client"],"support_patterns":["Bearer","OAuth 2.0"],"require_patterns":["OAuth 2.0"]},
+        {"field":"primary_auth","value":"bearer_token","source_ids":["notion-auth"],"support_patterns":["installation access token"]},
+        {"field":"credential_access","value":"self_serve_free","source_ids":["notion-quickstart"],"support_patterns":["internal connection","API token"]},
+        {"field":"sandbox_access","value":"not_applicable","source_ids":["notion-quickstart"],"support_patterns":["internal connection"]},
+        {"field":"production_access","value":"self_serve_free","source_ids":["notion-quickstart"],"support_patterns":["retrieve the access token","API token"]},
+        {"field":"public_api_available","value":"yes","source_ids":["notion-intro"],"support_patterns":["API reference"]},
+        {"field":"api_styles","value":["rest"],"source_ids":["notion-intro"],"support_patterns":["API requests"]},
+        {"field":"api_breadth","value":"broad","source_ids":["notion-intro"],"support_patterns":["pages, databases, and users"]},
+        {"field":"webhooks","value":"yes","source_ids":["notion-webhooks"],"support_patterns":["webhook"]},
+        {"field":"vendor_official_mcp","value":true,"source_ids":["notion-mcp"],"support_patterns":["mcp.notion.com"]},
+        {"field":"vendor_mcp_stage","value":"unknown","source_ids":["notion-mcp"],"support_patterns":["Notion MCP"]},
+        {"field":"technical_buildability","value":"yes","source_ids":["notion-mcp"],"support_patterns":["OAuth 2.0 Authorization Code flow","Notion"]},
+        {"field":"setup_friction","value":"oauth_configuration","source_ids":["notion-mcp"],"support_patterns":["OAuth"]},
+        {"field":"main_blocker","value":"none","source_ids":["notion-mcp"],"support_patterns":["mcp.notion.com"]}
+      ],
+      "verification_rules":[
+        {"field":"identity","source_ids":["notion-quickstart"],"support_patterns":["Notion","connection"],"supported_value":"Notion","contradiction_patterns":["different vendor"]},
+        {"field":"auth_methods","source_ids":["notion-auth"],"support_patterns":["OAuth 2.0","Bearer"],"supported_value":["bearer_token","oauth2","oauth2_pkce"],"contradiction_patterns":["API key only"]},
+        {"field":"production_access","source_ids":["notion-auth"],"support_patterns":["internal connection","access token"],"supported_value":"self_serve_free","contradiction_patterns":["trial only"]},
+        {"field":"vendor_official_mcp","source_ids":["notion-mcp"],"support_patterns":["mcp.notion.com"],"supported_value":true,"contradiction_patterns":["community-only"]},
+        {"field":"technical_buildability","source_ids":["notion-quickstart"],"support_patterns":["API token"],"supported_value":"yes","contradiction_patterns":["not available"]}
+      ]
+    },
+    {
+      "id":"vercel","app":"Vercel","category":"developer_tools","group":"straightforward","assignment_hint":"Vercel deployment platform","identity_options":[{"id":"vercel-platform","vendor":"Vercel","product":"Vercel","canonical_url":"https://vercel.com/","expected_hosts":["vercel.com"],"source_ids":["vercel-rest"],"patterns":["Vercel","API"],"hint_patterns":["Vercel"],"rationale":"Vercel's documentation identifies its REST API and deployment platform."}],
+      "sources":[
+        {"id":"vercel-rest","url":"https://vercel.com/docs/rest-api","source_type":"official_api_docs","expected_hosts":["vercel.com"],"roles":["research","verify"]},
+        {"id":"vercel-webhooks","url":"https://vercel.com/docs/webhooks","source_type":"official_api_docs","expected_hosts":["vercel.com"],"roles":["verify"]},
+        {"id":"vercel-mcp","url":"https://vercel.com/docs/agent-resources/vercel-mcp","source_type":"official_api_docs","expected_hosts":["vercel.com"],"roles":["research","verify"]}
+      ],
+      "research_rules":[
+        {"field":"description","value":"Vercel is a deployment platform with APIs for projects, deployments, domains, and environments.","source_ids":["vercel-rest"],"support_patterns":["deploy new versions","custom domains"]},
+        {"field":"auth_methods","value":["bearer_token"],"source_ids":["vercel-rest"],"support_patterns":["Authorization: Bearer"]},
+        {"field":"primary_auth","value":"bearer_token","source_ids":["vercel-rest"],"support_patterns":["Vercel Access Tokens"]},
+        {"field":"credential_access","value":"self_serve_free","source_ids":["vercel-rest"],"support_patterns":["Create and manage Access Tokens"]},
+        {"field":"production_access","value":"self_serve_free","source_ids":["vercel-rest"],"support_patterns":["Create and manage Access Tokens"]},
+        {"field":"public_api_available","value":"yes","source_ids":["vercel-rest"],"support_patterns":["Vercel REST API Reference"]},
+        {"field":"api_styles","value":["rest"],"source_ids":["vercel-rest"],"support_patterns":["REST architecture"]},
+        {"field":"api_breadth","value":"broad","source_ids":["vercel-rest"],"support_patterns":["Deployments","Projects"],"require_patterns":["Deployments"]},
+        {"field":"webhooks","value":"yes","source_ids":["vercel-webhooks"],"support_patterns":["webhook"]},
+        {"field":"vendor_official_mcp","value":true,"source_ids":["vercel-mcp"],"support_patterns":["official MCP server"]},
+        {"field":"vendor_mcp_stage","value":"beta","source_ids":["vercel-mcp"],"support_patterns":["available in Beta"]},
+        {"field":"technical_buildability","value":"yes","source_ids":["vercel-mcp"],"support_patterns":["Manage projects and deployments"]},
+        {"field":"setup_friction","value":"app_review","source_ids":["vercel-mcp"],"support_patterns":["reviewed and approved"]},
+        {"field":"main_blocker","value":"none","source_ids":["vercel-mcp"],"support_patterns":["official MCP server"]}
+      ],
+      "verification_rules":[
+        {"field":"identity","source_ids":["vercel-mcp"],"support_patterns":["Vercel","MCP"],"supported_value":"Vercel","contradiction_patterns":["different vendor"]},
+        {"field":"auth_methods","source_ids":["vercel-rest"],"support_patterns":["Authorization: Bearer"],"supported_value":["bearer_token"],"contradiction_patterns":["API key only"]},
+        {"field":"production_access","source_ids":["vercel-rest"],"support_patterns":["Access Tokens"],"supported_value":"self_serve_free","contradiction_patterns":["contact sales required"]},
+        {"field":"vendor_official_mcp","source_ids":["vercel-mcp"],"support_patterns":["official MCP server","available in Beta"],"supported_value":true,"contradiction_patterns":["community-only"]},
+        {"field":"technical_buildability","source_ids":["vercel-mcp"],"support_patterns":["Manage projects and deployments"],"supported_value":"yes","contradiction_patterns":["not usable"]}
+      ]
+    },
+    {
+      "id":"paygent-connect","app":"Paygent Connect","category":"finance_payments","group":"difficult","assignment_hint":"Paygent Connect (paygent, NMI-powered)","assignment_hint_required":true,
+      "identity_options":[
+        {"id":"gopaygent-connect","vendor":"Paygent","product":"Paygent Connect (gopaygent.com)","canonical_url":"https://www.gopaygent.com/","expected_hosts":["gopaygent.com"],"source_ids":["pg-gopaygent-seed"],"patterns":["Paygent Connect"],"hint_patterns":["NMI"],"matches_assignment_hint":"no","eligible":false,"evidence_for":["The site uses the exact Paygent Connect name and describes REST APIs, sandbox testing, and webhooks."],"evidence_against":["The current first-party site does not identify an NMI relationship."],"rejection_reason":"Name and product shape match, but the NMI-powered assignment hint is not reconciled."},
+        {"id":"paygent-tech-agent","vendor":"Paygent","product":"Paygent agent payments API (paygent.tech)","canonical_url":"https://api.paygent.tech/docs","expected_hosts":["paygent.tech"],"source_ids":["pg-tech"],"patterns":["Paygent","virtual card"],"hint_patterns":["NMI"],"matches_assignment_hint":"no","eligible":false,"evidence_for":["The API uses Paygent branding and documents an agent payments product."],"evidence_against":["The docs describe virtual cards/wallets rather than Paygent Connect and do not mention NMI."],"rejection_reason":"Adjacent Paygent product; it does not match the assignment hint."},
+        {"id":"withpaygent","vendor":"Paygent","product":"Paygent agent monetization (withpaygent.com)","canonical_url":"https://www.withpaygent.com/","expected_hosts":["withpaygent.com"],"source_ids":["pg-withpaygent"],"patterns":["Paygent"],"hint_patterns":["NMI"],"matches_assignment_hint":"no","eligible":false,"evidence_for":["The site uses Paygent branding."],"evidence_against":["The product is AI-agent monetization/cost tracking, not Connect or an NMI gateway."],"rejection_reason":"Adjacent Paygent product; it does not match the assignment hint."},
+        {"id":"paygent-japan","vendor":"GMO Payment Gateway","product":"Paygent Japan","canonical_url":"https://www.paygent.co.jp/","expected_hosts":["paygent.co.jp"],"source_ids":["pg-jp"],"patterns":["Paygent"],"hint_patterns":["NMI"],"matches_assignment_hint":"no","eligible":false,"evidence_for":["The Japanese site is a payment gateway named Paygent."],"evidence_against":["It is a distinct Japanese company/domain and has no Connect/NMI reconciliation."],"rejection_reason":"Distinct same-name product."},
+        {"id":"nmi-gateway","vendor":"NMI","product":"NMI Gateway","canonical_url":"https://docs.nmi.com/","expected_hosts":["nmi.com"],"source_ids":["nmi-gateway","nmi-home"],"patterns":["NMI","gateway"],"hint_patterns":["Paygent Connect"],"matches_assignment_hint":"unknown","eligible":false,"evidence_for":["NMI publishes a gateway API and security-key documentation."],"evidence_against":["No first-party page found linking NMI to a product called Paygent Connect."],"rejection_reason":"NMI is a plausible technology hint but not evidence of the named product identity."}
+      ],
+      "sources":[
+        {"id":"pg-gopaygent-seed","url":"https://www.gopaygent.com/","source_type":"official_product_docs","expected_hosts":["gopaygent.com"],"roles":["research","discovery"],"browser_fallback":true},
+        {"id":"pg-tech","url":"https://api.paygent.tech/docs","source_type":"official_api_docs","expected_hosts":["paygent.tech"],"roles":["research","verify"]},
+        {"id":"pg-withpaygent","url":"https://www.withpaygent.com/","source_type":"official_product_docs","expected_hosts":["withpaygent.com"],"roles":["research","verify"]},
+        {"id":"pg-jp","url":"https://www.paygent.co.jp/","source_type":"official_product_docs","expected_hosts":["paygent.co.jp"],"roles":["verify"]},
+        {"id":"nmi-gateway","url":"https://docs.nmi.com/reference/nmi-gateway-features","source_type":"official_api_docs","expected_hosts":["nmi.com"],"roles":["research","verify"]},
+        {"id":"nmi-home","url":"https://docs.nmi.com/","source_type":"official_product_docs","expected_hosts":["nmi.com"],"roles":["verify"]}
+      ],
+      "discovery":{"seed_source_ids":["pg-gopaygent-seed"],"allowed_hosts":["gopaygent.com"],"keywords":["api","developer","connect","docs","webhook"],"max_sources":4},
+      "research_rules":[],
+      "verification_rules":[{"field":"identity","source_ids":["pg-gopaygent-seed","nmi-gateway","nmi-home"],"support_patterns":["Paygent Connect","NMI"],"supported_value":"unresolved","contradiction_patterns":["no relationship","unrelated"]}]
+    },
+    {
+      "id":"ipayx","app":"iPayX","category":"finance_payments","group":"difficult","assignment_hint":"iPayX Protocol FX audit API","identity_options":[{"id":"ipayx-protocol","vendor":"iPayX Protocol","product":"iPayX Protocol","canonical_url":"https://www.ipayx.ai/","expected_hosts":["ipayx.ai"],"source_ids":["ipayx-developers","ipayx-openapi"],"patterns":["iPayX","FX"],"hint_patterns":["iPayX","FX"],"rationale":"The vendor's developer site and OpenAPI document identify iPayX Protocol's FX audit infrastructure."}],
+      "sources":[
+        {"id":"ipayx-developers","url":"https://www.ipayx.ai/developers","source_type":"official_product_docs","expected_hosts":["ipayx.ai"],"roles":["research"],"browser_fallback":true},
+        {"id":"ipayx-openapi","url":"https://www.ipayx.ai/.well-known/openapi.json","source_type":"official_api_docs","expected_hosts":["ipayx.ai"],"roles":["research","verify"]},
+        {"id":"ipayx-mcp-manifest","url":"https://www.ipayx.ai/.well-known/mcp.json","source_type":"official_api_docs","expected_hosts":["ipayx.ai"],"roles":["research","verify"]},
+        {"id":"ipayx-mcp-docs","url":"https://www.ipayx.ai/docs/mcp-server","source_type":"official_api_docs","expected_hosts":["ipayx.ai"],"roles":["research","verify"]},
+        {"id":"ipayx-terms","url":"https://www.ipayx.ai/api-terms","source_type":"official_product_docs","expected_hosts":["ipayx.ai"],"roles":["verify"]}
+      ],
+      "research_rules":[
+        {"field":"description","value":"iPayX Protocol provides forensic FX audit infrastructure for AI agents and fintechs.","source_ids":["ipayx-openapi"],"support_patterns":["Forensic FX Infrastructure API"]},
+        {"field":"auth_methods","value":["api_key","bearer_token"],"source_ids":["ipayx-openapi","ipayx-mcp-manifest"],"support_patterns":["bearerAuth","api key"],"require_patterns":["ipx_live"]},
+        {"field":"primary_auth","value":"bearer_token","source_ids":["ipayx-mcp-manifest"],"support_patterns":["Authorization","Bearer"],"require_patterns":["ipx_live"]},
+        {"field":"credential_access","value":"self_serve_free","source_ids":["ipayx-developers"],"support_patterns":["Get API Key","Create your account"]},
+        {"field":"sandbox_access","value":"self_serve_free","source_ids":["ipayx-developers"],"support_patterns":["Try Sandbox"]},
+        {"field":"production_access","value":"self_serve_free","source_ids":["ipayx-developers"],"support_patterns":["generate your production API key"]},
+        {"field":"public_api_available","value":"yes","source_ids":["ipayx-openapi"],"support_patterns":["iPayX Forensic FX Infrastructure API"]},
+        {"field":"api_styles","value":["rest"],"source_ids":["ipayx-openapi"],"support_patterns":["openapi"]},
+        {"field":"api_breadth","value":"narrow","source_ids":["ipayx-openapi"],"support_patterns":["/fx-audit-engine","/fetch-spot-rate","/roi-calculator"],"require_patterns":["/fx-audit-engine"]},
+        {"field":"webhooks","value":"yes","source_ids":["ipayx-developers"],"support_patterns":["Webhooks"]},
+        {"field":"vendor_official_mcp","value":true,"source_ids":["ipayx-mcp-manifest"],"support_patterns":["mcp.ipayx.ai/mcp"]},
+        {"field":"vendor_mcp_stage","value":"unknown","source_ids":["ipayx-mcp-manifest"],"support_patterns":["iPayX"]},
+        {"field":"technical_buildability","value":"yes","source_ids":["ipayx-mcp-manifest"],"support_patterns":["AI agents","public tools"]},
+        {"field":"commercial_friction","value":"free_tier_limited","source_ids":["ipayx-developers"],"support_patterns":["10/IP/7d","RATE LIMITS","Developer — $99/mo"]},
+        {"field":"setup_friction","value":"none","source_ids":["ipayx-developers"],"support_patterns":["Get API Key"]},
+        {"field":"main_blocker","value":"none","source_ids":["ipayx-mcp-manifest"],"support_patterns":["mcp.ipayx.ai/mcp"]}
+      ],
+      "verification_rules":[
+        {"field":"identity","source_ids":["ipayx-mcp-docs"],"support_patterns":["iPayX","MCP"],"supported_value":"iPayX Protocol","contradiction_patterns":["different vendor"]},
+        {"field":"auth_methods","source_ids":["ipayx-openapi"],"support_patterns":["bearerAuth","Bearer"],"supported_value":["api_key","bearer_token"],"contradiction_patterns":["OAuth only"]},
+        {"field":"production_access","source_ids":["ipayx-mcp-docs"],"support_patterns":["production","API key"],"supported_value":"self_serve_free","contradiction_patterns":["approval required"]},
+        {"field":"vendor_official_mcp","source_ids":["ipayx-mcp-docs"],"support_patterns":["native MCP","mcp.ipayx.ai/mcp"],"supported_value":true,"contradiction_patterns":["community-only"]},
+        {"field":"technical_buildability","source_ids":["ipayx-developers"],"support_patterns":["Production-ready","REST API"],"supported_value":"yes","contradiction_patterns":["not usable"]}
+      ]
+    },
+    {
+      "id":"higgsfield","app":"higgsfield","category":"ai_media","group":"difficult","assignment_hint":"Higgsfield generative media API","identity_options":[{"id":"higgsfield-api","vendor":"Higgsfield","product":"Higgsfield API","canonical_url":"https://higgsfield.ai/","expected_hosts":["higgsfield.ai"],"source_ids":["hf-overview","hf-auth"],"patterns":["Higgsfield","API"],"hint_patterns":["Higgsfield"],"rationale":"Higgsfield's developer documentation identifies its image and video generation API."}],
+      "sources":[
+        {"id":"hf-overview","url":"https://docs.higgsfield.ai/","source_type":"official_api_docs","expected_hosts":["higgsfield.ai"],"roles":["research"]},
+        {"id":"hf-auth","url":"https://docs.higgsfield.ai/docs/authentication","source_type":"official_auth_docs","expected_hosts":["higgsfield.ai"],"roles":["research","verify"]},
+        {"id":"hf-webhooks","url":"https://docs.higgsfield.ai/docs/how-to/webhooks","source_type":"official_api_docs","expected_hosts":["higgsfield.ai"],"roles":["research","verify"]},
+        {"id":"hf-sdk","url":"https://github.com/higgsfield-ai/higgsfield-js","source_type":"official_github","expected_hosts":["github.com","higgsfield.ai"],"roles":["research","verify"]}
+      ],
+      "research_rules":[
+        {"field":"description","value":"Higgsfield provides an asynchronous API for generating images and videos with generative media models.","source_ids":["hf-overview"],"support_patterns":["Generate images and videos"]},
+        {"field":"auth_methods","value":["api_key"],"source_ids":["hf-auth","hf-sdk"],"support_patterns":["API key"]},
+        {"field":"primary_auth","value":"api_key","source_ids":["hf-auth"],"support_patterns":["Authorization: Key"]},
+        {"field":"credential_access","value":"self_serve_free","source_ids":["hf-overview"],"support_patterns":["Create and manage server-side credentials"]},
+        {"field":"production_access","value":"self_serve_free","source_ids":["hf-overview"],"support_patterns":["Create and manage server-side credentials"]},
+        {"field":"public_api_available","value":"yes","source_ids":["hf-overview"],"support_patterns":["authenticated, asynchronous API"]},
+        {"field":"api_styles","value":["rest"],"source_ids":["hf-overview"],"support_patterns":["api.higgsfield.ai"]},
+        {"field":"api_breadth","value":"moderate","source_ids":["hf-overview"],"support_patterns":["model endpoint","poll for the result"]},
+        {"field":"webhooks","value":"yes","source_ids":["hf-webhooks"],"support_patterns":["webhook"]},
+        {"field":"technical_buildability","value":"yes","source_ids":["hf-overview"],"support_patterns":["Get an API key","Ship to production"]},
+        {"field":"commercial_friction","value":"usage_pricing","source_ids":["hf-overview"],"support_patterns":["credits","pricing"]},
+        {"field":"setup_friction","value":"none","source_ids":["hf-overview"],"support_patterns":["Run your first request"]},
+        {"field":"main_blocker","value":"none","source_ids":["hf-overview"],"support_patterns":["Run your first request"]}
+      ],
+      "verification_rules":[
+        {"field":"identity","source_ids":["hf-sdk"],"support_patterns":["Higgsfield","API"],"supported_value":"Higgsfield API","contradiction_patterns":["different vendor"]},
+        {"field":"auth_methods","source_ids":["hf-sdk"],"support_patterns":["API key","HF_API_KEY"],"supported_value":["api_key"],"contradiction_patterns":["OAuth only"]},
+        {"field":"production_access","source_ids":["hf-auth"],"support_patterns":["credentials","API key"],"supported_value":"self_serve_free","contradiction_patterns":["approval required"]},
+        {"field":"webhooks","source_ids":["hf-webhooks"],"support_patterns":["webhook"],"supported_value":"yes","contradiction_patterns":["webhooks are not supported"]},
+        {"field":"technical_buildability","source_ids":["hf-sdk"],"support_patterns":["withPolling","API"],"supported_value":"yes","contradiction_patterns":["not usable"]}
+      ]
+    },
+    {
+      "id":"otter-ai","app":"Otter AI","category":"ai_media","group":"difficult","assignment_hint":"Otter AI meeting intelligence","identity_options":[{"id":"otter-meetings","vendor":"Otter.ai","product":"Otter.ai","canonical_url":"https://otter.ai/","expected_hosts":["otter.ai"],"source_ids":["otter-mcp","otter-home"],"patterns":["Otter","meetings"],"hint_patterns":["Otter"],"rationale":"Otter's official help center describes the meeting product and hosted MCP server."}],
+      "sources":[
+        {"id":"otter-mcp","url":"https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server","source_type":"official_product_docs","expected_hosts":["otter.ai"],"roles":["research","verify"]},
+        {"id":"otter-home","url":"https://otter.ai/","source_type":"official_product_docs","expected_hosts":["otter.ai"],"roles":["research"]},
+        {"id":"otter-help","url":"https://help.otter.ai/hc/en-us","source_type":"official_product_docs","expected_hosts":["otter.ai"],"roles":["verify"]}
+      ],
+      "research_rules":[
+        {"field":"description","value":"Otter.ai is a meeting intelligence product for capturing, searching, and analyzing conversations.","source_ids":["otter-mcp"],"support_patterns":["meetings","meeting transcripts"]},
+        {"field":"auth_methods","value":["oauth2"],"source_ids":["otter-mcp"],"support_patterns":["OAuth"]},
+        {"field":"primary_auth","value":"oauth2","source_ids":["otter-mcp"],"support_patterns":["OAuth"]},
+        {"field":"credential_access","value":"approval_required","source_ids":["otter-mcp"],"support_patterns":["no public API key","Contact our Otter Support Team"]},
+        {"field":"production_access","value":"approval_required","source_ids":["otter-mcp"],"support_patterns":["no public API key","Contact our Otter Support Team"]},
+        {"field":"public_api_available","value":"limited","source_ids":["otter-mcp"],"support_patterns":["public API key"]},
+        {"field":"api_styles","value":["other"],"source_ids":["otter-mcp"],"support_patterns":["MCP"]},
+        {"field":"api_breadth","value":"narrow","source_ids":["otter-mcp"],"support_patterns":["3 tools","Search your meeting transcripts"]},
+        {"field":"vendor_official_mcp","value":true,"source_ids":["otter-mcp"],"support_patterns":["Otter MCP Server","mcp.otter.ai"]},
+        {"field":"vendor_mcp_stage","value":"unknown","source_ids":["otter-mcp"],"support_patterns":["Otter MCP Server"]},
+        {"field":"technical_buildability","value":"yes","source_ids":["otter-mcp"],"support_patterns":["mcp.otter.ai","OAuth"]},
+        {"field":"setup_friction","value":"oauth_configuration","source_ids":["otter-mcp"],"support_patterns":["OAuth"]},
+        {"field":"main_blocker","value":"none","source_ids":["otter-mcp"],"support_patterns":["Otter MCP Server"]}
+      ],
+      "verification_rules":[
+        {"field":"identity","source_ids":["otter-home"],"support_patterns":["Otter"],"supported_value":"Otter.ai","contradiction_patterns":["different vendor"]},
+        {"field":"auth_methods","source_ids":["otter-help"],"support_patterns":["OAuth"],"supported_value":["oauth2"],"contradiction_patterns":["API key only"]},
+        {"field":"production_access","source_ids":["otter-help"],"support_patterns":["API key","support"],"supported_value":"approval_required","contradiction_patterns":["public API key available to everyone"]},
+        {"field":"vendor_official_mcp","source_ids":["otter-mcp"],"support_patterns":["Otter MCP Server","mcp.otter.ai"],"supported_value":true,"contradiction_patterns":["community-only"]},
+        {"field":"technical_buildability","source_ids":["otter-mcp"],"support_patterns":["OAuth-authenticated","Search your meeting transcripts"],"supported_value":"yes","contradiction_patterns":["not usable"]}
+      ]
+    },
+    {
+      "id":"mermaid-cli","app":"Mermaid CLI","category":"ai_media","group":"difficult","assignment_hint":"Mermaid command-line renderer","identity_options":[{"id":"mermaid-cli","vendor":"Mermaid","product":"Mermaid CLI","canonical_url":"https://github.com/mermaid-js/mermaid-cli","expected_hosts":["github.com"],"source_ids":["mermaid-cli-github"],"patterns":["mermaid-cli","Command line tool"],"hint_patterns":["Command line tool"],"rationale":"The official mermaid-js repository identifies Mermaid CLI as a command-line renderer."}],
+      "sources":[
+        {"id":"mermaid-cli-github","url":"https://github.com/mermaid-js/mermaid-cli","source_type":"official_github","expected_hosts":["github.com"],"roles":["research","verify"]},
+        {"id":"mermaid-cli-releases","url":"https://github.com/mermaid-js/mermaid-cli/releases","source_type":"official_github","expected_hosts":["github.com"],"roles":["verify"]},
+        {"id":"mermaid-library","url":"https://github.com/mermaid-js/mermaid","source_type":"official_github","expected_hosts":["github.com"],"roles":["verify"]}
+      ],
+      "research_rules":[
+        {"field":"description","value":"Mermaid CLI is a command-line tool that renders Mermaid definitions into SVG, PNG, or PDF files.","source_ids":["mermaid-cli-github"],"support_patterns":["Command line tool for the Mermaid library"]},
+        {"field":"auth_methods","value":["not_applicable"],"source_ids":["mermaid-cli-github"],"support_patterns":["npm install","command-line"]},
+        {"field":"primary_auth","value":"not_applicable","source_ids":["mermaid-cli-github"],"support_patterns":["command-line"]},
+        {"field":"credential_access","value":"not_applicable","source_ids":["mermaid-cli-github"],"support_patterns":["npm install"]},
+        {"field":"sandbox_access","value":"not_applicable","source_ids":["mermaid-cli-github"],"support_patterns":["command-line"]},
+        {"field":"production_access","value":"not_applicable","source_ids":["mermaid-cli-github"],"support_patterns":["command-line"]},
+        {"field":"public_api_available","value":"limited","source_ids":["mermaid-cli-github"],"support_patterns":["Node.JS API"]},
+        {"field":"api_styles","value":["sdk_only"],"source_ids":["mermaid-cli-github"],"support_patterns":["Node.JS API"]},
+        {"field":"api_breadth","value":"action_specific","source_ids":["mermaid-cli-github"],"support_patterns":["generates an SVG/PNG/PDF"]},
+        {"field":"vendor_official_mcp","value":"unknown","source_ids":["mermaid-cli-github"],"support_patterns":["mermaid-cli"]},
+        {"field":"vendor_mcp_stage","value":"unknown","source_ids":["mermaid-cli-github"],"support_patterns":["mermaid-cli"]},
+        {"field":"technical_buildability","value":"limited","source_ids":["mermaid-cli-github"],"support_patterns":["Command line tool","npm install"]},
+        {"field":"commercial_friction","value":"none","source_ids":["mermaid-cli-github"],"support_patterns":["npm install"]},
+        {"field":"setup_friction","value":"none","source_ids":["mermaid-cli-github"],"support_patterns":["npm install"]},
+        {"field":"main_blocker","value":"interface_limited","source_ids":["mermaid-cli-github"],"support_patterns":["Command line tool"]}
+      ],
+      "verification_rules":[
+        {"field":"identity","source_ids":["mermaid-cli-releases"],"support_patterns":["mermaid-cli"],"supported_value":"Mermaid CLI","contradiction_patterns":["hosted payment API"]},
+        {"field":"auth_methods","source_ids":["mermaid-cli-github"],"support_patterns":["command-line","npm install"],"supported_value":["not_applicable"],"contradiction_patterns":["API key required"]},
+        {"field":"technical_buildability","source_ids":["mermaid-library"],"support_patterns":["JavaScript library","diagramming"],"supported_value":"limited","contradiction_patterns":["MCP server"]}
+      ]
+    }
+  ]
+}

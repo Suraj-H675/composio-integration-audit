@@ -1,0 +1,589 @@
+{
+  "validations": [
+    {
+      "app": "Salesforce",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "HubSpot",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Pipedrive",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Attio",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Twenty",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Podio",
+      "errors": [
+        {
+          "code": "open_distribution_without_evidence",
+          "message": "Open multi-customer distribution requires evidence about public/distributable integration setup.",
+          "field": "distributed_integration_access",
+          "severity": "error"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "app": "Zoho CRM",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Close",
+      "errors": [
+        {
+          "code": "app_review_without_evidence",
+          "message": "App-review distribution requires evidence of review, approval, production gating, or public-app review.",
+          "field": "distributed_integration_access",
+          "severity": "error"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "app": "Copper",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "DealCloud",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Zendesk",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Intercom",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Freshdesk",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Front",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Pylon",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "LiveAgent",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Plain",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Help Scout",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Gorgias",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Gladly",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Slack",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Twilio",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Zoho Cliq",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Pumble",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Discord",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Telegram",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "WhatsApp Business",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Aircall",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Vonage",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Google Ads",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Meta Ads",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "LinkedIn Ads",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "GoHighLevel",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Mailchimp",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Klaviyo",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "systeme.io",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Pinterest",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Threads (Meta)",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "SendGrid",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Shopify",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "WooCommerce",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "BigCommerce",
+      "errors": [
+        {
+          "code": "app_review_without_evidence",
+          "message": "App-review distribution requires evidence of review, approval, production gating, or public-app review.",
+          "field": "distributed_integration_access",
+          "severity": "error"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Squarespace",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Ecwid",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Gumroad",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Amazon Selling Partner",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "fanbasis",
+      "errors": [],
+      "warnings": [
+        {
+          "code": "identity_requires_escalation",
+          "message": "Identity uncertainty requires human or deeper research review.",
+          "field": "identity",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "app": "DataForSEO",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "SE Ranking",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Ahrefs",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "MrScraper",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Apify",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Firecrawl",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Bright Data",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Sherlock",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Waterfall.io",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Clay",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "GitHub",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Vercel",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Netlify",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Cloudflare",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Supabase",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Neo4j",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Snowflake",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "MongoDB Atlas",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Datadog",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Sentry",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Notion",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Airtable",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Linear",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Jira",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Asana",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Monday.com",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "ClickUp",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Coda",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Smartsheet",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Harvest",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Stripe",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Plaid",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Binance",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Paygent Connect",
+      "errors": [
+        {
+          "code": "identity_hint_conflict",
+          "message": "A name-matching candidate conflicts with the assignment hint/context and cannot be accepted automatically.",
+          "field": "identity",
+          "severity": "error"
+        }
+      ],
+      "warnings": [
+        {
+          "code": "identity_requires_escalation",
+          "message": "Identity hint conflict requires deeper research or human review.",
+          "field": "identity",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "app": "iPayX",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "QuickBooks",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Xero",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Brex",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Ramp",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "PitchBook",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "NotebookLM",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Otter AI",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Fathom",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Consensus",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Reducto",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Devin",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "higgsfield",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Mermaid CLI",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "YouTube Transcript",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "app": "Grain",
+      "errors": [],
+      "warnings": []
+    }
+  ],
+  "fatal_errors": [],
+  "intentional_errors": [
+    {
+      "app": "Paygent Connect",
+      "code": "identity_hint_conflict",
+      "message": "A name-matching candidate conflicts with the assignment hint/context and cannot be accepted automatically.",
+      "field": "identity",
+      "severity": "error",
+      "intentional": true,
+      "reason": "The assignment hint conflict is an approved abstention, not a corruption."
+    },
+    {
+      "app": "Podio",
+      "code": "open_distribution_without_evidence",
+      "message": "Open multi-customer distribution requires evidence about public/distributable integration setup.",
+      "field": "distributed_integration_access",
+      "severity": "error",
+      "intentional": true,
+      "reason": "The approved human adjudication takes precedence over this conservative deterministic evidence heuristic."
+    },
+    {
+      "app": "Close",
+      "code": "app_review_without_evidence",
+      "message": "App-review distribution requires evidence of review, approval, production gating, or public-app review.",
+      "field": "distributed_integration_access",
+      "severity": "error",
+      "intentional": true,
+      "reason": "The approved human adjudication takes precedence over this conservative deterministic evidence heuristic."
+    },
+    {
+      "app": "BigCommerce",
+      "code": "app_review_without_evidence",
+      "message": "App-review distribution requires evidence of review, approval, production gating, or public-app review.",
+      "field": "distributed_integration_access",
+      "severity": "error",
+      "intentional": true,
+      "reason": "The approved human adjudication takes precedence over this conservative deterministic evidence heuristic."
+    }
+  ],
+  "sweep_change_counts": {
+    "mcp_lifecycle": 12,
+    "enterprise_commercial": 16
+  }
+}

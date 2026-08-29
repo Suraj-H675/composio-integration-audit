@@ -1,0 +1,28 @@
+.bootstrap/
+.research_refs/
+
+# Local research/runtime state
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
+node_modules/
+.next/
+.vercel/
+dist/
+coverage/
+.cache/
+.test-cache/
+
+# Local/editor/OS files
+.DS_Store
+.idea/
+.vscode/
+*.local
+*.tgz
+
+# Non-runtime intermediate research artifacts
+data/full_run/
+data/final_review/
+data/calibration/

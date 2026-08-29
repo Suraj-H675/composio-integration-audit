@@ -1,0 +1,1059 @@
+{
+  "datasetId": "2026-08-28.final.v2",
+  "schemaVersion": "2026-08-28.full-run.v2",
+  "appCount": 100,
+  "source": {
+    "rows": 876,
+    "uniqueUrls": 810,
+    "live": 868,
+    "retrieval": {
+      "http": 843,
+      "browser": 33
+    }
+  },
+  "claims": {
+    "count": 2100,
+    "evidenceBacked": 2082
+  },
+  "unknown": {
+    "primary": {
+      "label": "Unknown primary fields",
+      "numerator": 425,
+      "denominator": 1900,
+      "value": 0.2236842105263158,
+      "percent": 22.4,
+      "display": "425/1900",
+      "definition": "Counts unknown values across presentation fields; legacy production_access and credential_access are excluded."
+    },
+    "byField": {
+      "description": 1,
+      "auth_methods": 4,
+      "primary_auth": 4,
+      "customer_credential_access": 28,
+      "sandbox_access": 59,
+      "distributed_integration_access": 29,
+      "public_api_available": 3,
+      "api_styles": 3,
+      "api_breadth": 2,
+      "webhooks": 16,
+      "vendor_official_mcp": 25,
+      "vendor_mcp_type": 27,
+      "vendor_mcp_stage": 92,
+      "community_mcp": 100,
+      "composio_toolkit_exists": 0,
+      "technical_buildability": 3,
+      "commercial_friction": 25,
+      "setup_friction": 2,
+      "main_blocker": 2
+    },
+    "legacy": {
+      "credential_access": 3,
+      "production_access": 38
+    }
+  },
+  "identity": {
+    "distribution": {
+      "confirmed": 98,
+      "unresolved": 2
+    },
+    "unresolved": 2
+  },
+  "headline": {
+    "technicallyBuildable": {
+      "label": "Technically buildable",
+      "numerator": 96,
+      "denominator": 100,
+      "value": 0.96,
+      "percent": 96,
+      "display": "96%",
+      "definition": "Count of records with technical_buildability=yes; pricing, admin setup, and distribution gates do not downgrade this field."
+    },
+    "openDistribution": {
+      "label": "Open distribution",
+      "numerator": 27,
+      "denominator": 100,
+      "value": 0.27,
+      "percent": 27,
+      "display": "27",
+      "definition": "Count of records with distributed_integration_access=open_self_serve."
+    },
+    "productActionMcp": {
+      "label": "Product-action official MCPs",
+      "numerator": 65,
+      "denominator": 75,
+      "value": 0.8666666666666667,
+      "percent": 86.7,
+      "display": "65",
+      "definition": "Count of official vendor MCPs classified as product_action; denominator is official MCPs."
+    },
+    "productActionMcpAbsent": {
+      "label": "Product-action MCPs absent from Composio",
+      "numerator": 24,
+      "denominator": 100,
+      "value": 0.24,
+      "percent": 24,
+      "display": "24",
+      "definition": "Count of product-action official MCP apps whose Composio toolkit value is no."
+    },
+    "composioCoverage": {
+      "label": "Composio toolkit coverage",
+      "numerator": 55,
+      "denominator": 100,
+      "value": 0.55,
+      "percent": 55,
+      "display": "55/100",
+      "definition": "Count of apps with composio_toolkit_exists=yes."
+    },
+    "resolvedHoldoutAccuracy": {
+      "label": "Resolved-field accuracy",
+      "numerator": 351,
+      "denominator": 375,
+      "value": 0.936,
+      "percent": 93.6,
+      "display": "351/375",
+      "definition": "correct / (correct + wrong); abstentions and human-unresolved fields are excluded."
+    },
+    "paidCost": {
+      "label": "Paid research cost",
+      "value": 0,
+      "display": "$0",
+      "definition": "Paid services reported by the frozen dataset lock."
+    },
+    "unresolvedIdentities": {
+      "label": "Unresolved identities",
+      "numerator": 2,
+      "denominator": 100,
+      "value": 0.02,
+      "percent": 2,
+      "display": "2",
+      "definition": "Count of records whose identity status is unresolved."
+    }
+  },
+  "distribution": {
+    "customerCredentialAccess": {
+      "admin_required": 9,
+      "self_serve_free": 50,
+      "unknown": 28,
+      "self_serve_trial": 4,
+      "vendor_approval_required": 7,
+      "not_applicable": 1,
+      "self_serve_paid": 1
+    },
+    "distributedIntegrationAccess": {
+      "unknown": 29,
+      "app_review_required": 14,
+      "open_self_serve": 27,
+      "customer_managed_only": 23,
+      "enterprise_contract_required": 1,
+      "partner_program_required": 2,
+      "vendor_approval_required": 3,
+      "not_applicable": 1
+    },
+    "customerEasyDistributionGated": {
+      "label": "Customer-self-serve but distribution-gated",
+      "numerator": 11,
+      "denominator": 100,
+      "value": 0.11,
+      "percent": 11,
+      "display": "11",
+      "definition": "Customer credential access is self-serve while distributed integration access is app, partner, vendor, or enterprise gated."
+    },
+    "documentedDistributionGates": {
+      "label": "Documented distribution gates",
+      "numerator": 20,
+      "denominator": 100,
+      "value": 0.2,
+      "percent": 20,
+      "display": "20",
+      "definition": "Count of app-review, partner-program, vendor-approval, or enterprise-contract distribution values."
+    }
+  },
+  "buildability": {
+    "yes": 96,
+    "unknown": 3,
+    "limited": 1
+  },
+  "api": {
+    "public": {
+      "yes": 95,
+      "unknown": 3,
+      "limited": 2
+    },
+    "breadth": {
+      "broad": 75,
+      "action_specific": 18,
+      "moderate": 4,
+      "unknown": 2,
+      "narrow": 1
+    },
+    "styles": {
+      "rest": 70,
+      "sdk_only": 21,
+      "graphql": 17,
+      "websocket": 5,
+      "grpc": 1,
+      "rpc": 6,
+      "unknown": 3
+    }
+  },
+  "mcp": {
+    "officialCount": 75,
+    "officialDistribution": {
+      "true": 75,
+      "unknown": 25
+    },
+    "typeAmongOfficial": {
+      "product_action": 65,
+      "mixed": 6,
+      "documentation": 2,
+      "unknown": 2
+    },
+    "lifecycleAmongOfficial": {
+      "beta": 7,
+      "unknown": 67,
+      "public_preview": 1
+    },
+    "lifecycleAcrossAllApps": {
+      "beta": 7,
+      "unknown": 92,
+      "public_preview": 1
+    },
+    "unknownStageAmongOfficial": 67,
+    "unknownStageAcrossAllApps": 92,
+    "nonOfficialUnknownStage": 25,
+    "sanityExplanation": "The 67 figure is scoped to the 75 apps with confirmed official MCP ownership. The 92 figure counts every app whose lifecycle is unknown: 67 official MCPs without a documented lifecycle label plus 25 apps without confirmed official MCP ownership."
+  },
+  "composio": {
+    "distribution": {
+      "yes": 55,
+      "no": 45
+    },
+    "publicApiAbsent": 41,
+    "technicallyBuildableAbsent": 42,
+    "officialMcpAbsent": 29,
+    "productActionMcpAbsent": 24,
+    "catalogSnapshot": "2026-08-28T09:55:49.874Z"
+  },
+  "verification": {
+    "challengeCount": 800,
+    "agreement": {
+      "label": "Observed verifier agreement",
+      "numerator": 608,
+      "denominator": 741,
+      "value": 0.8205128205128205,
+      "percent": 82.1,
+      "display": "608/741",
+      "definition": "Agreement is a process signal, not ground-truth accuracy."
+    },
+    "sourceDisjoint": {
+      "label": "Source-disjoint verification",
+      "numerator": 767,
+      "denominator": 800,
+      "value": 0.95875,
+      "percent": 95.9,
+      "display": "767/800",
+      "definition": "Verified claims whose verifier source did not overlap the researcher source."
+    },
+    "sourceDisjointWhenAlternate": {
+      "label": "Source-disjoint when alternate evidence existed",
+      "numerator": 767,
+      "denominator": 767,
+      "value": 1,
+      "percent": 100,
+      "display": "767/767",
+      "definition": "Source-disjoint checks among challenges where the verifier found an alternate source."
+    }
+  },
+  "holdout": {
+    "appCount": 30,
+    "fieldCount": 450,
+    "exact": {
+      "label": "Exact field agreement",
+      "numerator": 413,
+      "denominator": 450,
+      "value": 0.9177777777777778,
+      "percent": 91.8,
+      "display": "413/450",
+      "definition": "Exact equality across all human-adjudicable v2 fields; approved unknown values are included."
+    },
+    "resolved": {
+      "label": "Resolved-field accuracy",
+      "numerator": 351,
+      "denominator": 375,
+      "value": 0.936,
+      "percent": 93.6,
+      "display": "351/375",
+      "definition": "correct / (correct + wrong); abstentions and human-unresolved fields are excluded."
+    },
+    "automationAbstentions": {
+      "label": "Automation abstention rate",
+      "numerator": 5,
+      "denominator": 450,
+      "value": 0.011111111111111112,
+      "percent": 1.1,
+      "display": "5/450",
+      "definition": "Pre-human proposal was unknown."
+    },
+    "humanUnresolved": {
+      "label": "Human-unresolved rate",
+      "numerator": 70,
+      "denominator": 450,
+      "value": 0.15555555555555556,
+      "percent": 15.6,
+      "display": "70/450",
+      "definition": "Approved value remains unknown."
+    },
+    "schemaRepair": {
+      "repaired": 86,
+      "accepted": 71,
+      "stillNeeded": 15,
+      "acceptedPercent": 82.56,
+      "denominator": 86
+    }
+  },
+  "evidenceQuality": {
+    "medium": 1080,
+    "high": 577,
+    "low": 443
+  },
+  "opportunities": {
+    "easyWins": [
+      {
+        "rank": 1,
+        "app": "Clay",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 2,
+        "app": "GoHighLevel",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 3,
+        "app": "Netlify",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 4,
+        "app": "Podio",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 5,
+        "app": "Twenty",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 6,
+        "app": "SE Ranking",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_trial customer credentials"
+        ]
+      }
+    ],
+    "partnership": [
+      {
+        "rank": 1,
+        "app": "Aircall",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "partner_program_required"
+        ]
+      },
+      {
+        "rank": 2,
+        "app": "Amazon Selling Partner",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      },
+      {
+        "rank": 3,
+        "app": "BigCommerce",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      },
+      {
+        "rank": 4,
+        "app": "Binance",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      },
+      {
+        "rank": 5,
+        "app": "Grain",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "vendor_approval_required"
+        ]
+      },
+      {
+        "rank": 6,
+        "app": "Plaid",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "vendor_approval_required"
+        ]
+      },
+      {
+        "rank": 7,
+        "app": "Squarespace",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      },
+      {
+        "rank": 8,
+        "app": "WhatsApp Business",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      }
+    ],
+    "customerManaged": [
+      {
+        "rank": 1,
+        "app": "Devin",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 2,
+        "app": "higgsfield",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 3,
+        "app": "iPayX",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 4,
+        "app": "LiveAgent",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 5,
+        "app": "MongoDB Atlas",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 6,
+        "app": "Otter AI",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 7,
+        "app": "Reducto",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 8,
+        "app": "systeme.io",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 9,
+        "app": "Twilio",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 10,
+        "app": "Vonage",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 11,
+        "app": "Waterfall.io",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 12,
+        "app": "WooCommerce",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 13,
+        "app": "Zoho Cliq",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 14,
+        "app": "Asana",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 15,
+        "app": "Bright Data",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 16,
+        "app": "Cloudflare",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 17,
+        "app": "Firecrawl",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 18,
+        "app": "Freshdesk",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 19,
+        "app": "GitHub",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 20,
+        "app": "MrScraper",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 21,
+        "app": "Neo4j",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 22,
+        "app": "SendGrid",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 23,
+        "app": "Stripe",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      }
+    ]
+  },
+  "categoryPatterns": {
+    "crm_sales": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "admin_required": 2,
+        "self_serve_free": 5,
+        "unknown": 3
+      },
+      "distributed_integration_access": {
+        "unknown": 4,
+        "app_review_required": 2,
+        "open_self_serve": 4
+      },
+      "auth_methods": {
+        "oauth2": 9,
+        "oauth2_pkce": 2,
+        "api_key": 8,
+        "bearer_token": 5,
+        "basic_auth": 3,
+        "oauth2_client_credentials": 2
+      },
+      "official_mcp": 8,
+      "product_action_mcp": 8,
+      "composio_toolkit": 5
+    },
+    "customer_support": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "unknown": 3,
+        "self_serve_free": 2,
+        "self_serve_trial": 2,
+        "admin_required": 3
+      },
+      "distributed_integration_access": {
+        "unknown": 3,
+        "open_self_serve": 3,
+        "customer_managed_only": 2,
+        "enterprise_contract_required": 1,
+        "app_review_required": 1
+      },
+      "auth_methods": {
+        "api_key": 6,
+        "bearer_token": 8,
+        "basic_auth": 4,
+        "oauth2": 5,
+        "jwt": 2,
+        "service_account": 1,
+        "oauth2_pkce": 1
+      },
+      "official_mcp": 6,
+      "product_action_mcp": 6,
+      "composio_toolkit": 6
+    },
+    "communication": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "unknown": 3,
+        "self_serve_free": 5,
+        "vendor_approval_required": 1,
+        "admin_required": 1
+      },
+      "distributed_integration_access": {
+        "unknown": 3,
+        "customer_managed_only": 3,
+        "open_self_serve": 2,
+        "app_review_required": 1,
+        "partner_program_required": 1
+      },
+      "auth_methods": {
+        "oauth2": 6,
+        "bearer_token": 5,
+        "oauth2_client_credentials": 1,
+        "api_key": 6,
+        "basic_auth": 4,
+        "unknown": 1,
+        "jwt": 2,
+        "service_account": 1
+      },
+      "official_mcp": 7,
+      "product_action_mcp": 6,
+      "composio_toolkit": 4
+    },
+    "marketing_analytics": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "self_serve_free": 6,
+        "unknown": 2,
+        "vendor_approval_required": 2
+      },
+      "distributed_integration_access": {
+        "unknown": 3,
+        "app_review_required": 4,
+        "open_self_serve": 1,
+        "customer_managed_only": 2
+      },
+      "auth_methods": {
+        "oauth2": 7,
+        "bearer_token": 7,
+        "service_account": 1,
+        "api_key": 6,
+        "oauth2_pkce": 1,
+        "basic_auth": 2
+      },
+      "official_mcp": 6,
+      "product_action_mcp": 6,
+      "composio_toolkit": 7
+    },
+    "commerce": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 9,
+        "unknown": 1
+      },
+      "customer_credential_access": {
+        "self_serve_free": 5,
+        "unknown": 3,
+        "self_serve_trial": 1,
+        "vendor_approval_required": 1
+      },
+      "distributed_integration_access": {
+        "app_review_required": 4,
+        "customer_managed_only": 1,
+        "unknown": 3,
+        "open_self_serve": 2
+      },
+      "auth_methods": {
+        "oauth2": 7,
+        "api_key": 3,
+        "jwt": 3,
+        "oauth1": 2,
+        "basic_auth": 2,
+        "personal_access_token": 1,
+        "bearer_token": 5,
+        "unknown": 1
+      },
+      "official_mcp": 5,
+      "product_action_mcp": 3,
+      "composio_toolkit": 2
+    },
+    "data_seo_scraping": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "unknown": 3,
+        "self_serve_trial": 1,
+        "admin_required": 1,
+        "self_serve_free": 4,
+        "vendor_approval_required": 1
+      },
+      "distributed_integration_access": {
+        "unknown": 3,
+        "open_self_serve": 2,
+        "app_review_required": 1,
+        "customer_managed_only": 4
+      },
+      "auth_methods": {
+        "api_key": 9,
+        "basic_auth": 1,
+        "oauth2": 3,
+        "bearer_token": 6,
+        "unknown": 1
+      },
+      "official_mcp": 9,
+      "product_action_mcp": 6,
+      "composio_toolkit": 6
+    },
+    "developer_tools": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "self_serve_free": 8,
+        "unknown": 1,
+        "admin_required": 1
+      },
+      "distributed_integration_access": {
+        "customer_managed_only": 4,
+        "unknown": 2,
+        "open_self_serve": 4
+      },
+      "auth_methods": {
+        "personal_access_token": 4,
+        "oauth2": 10,
+        "bearer_token": 9,
+        "api_key": 6,
+        "jwt": 4,
+        "basic_auth": 5,
+        "service_account": 3,
+        "oauth2_pkce": 1
+      },
+      "official_mcp": 10,
+      "product_action_mcp": 9,
+      "composio_toolkit": 8
+    },
+    "productivity": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "self_serve_free": 6,
+        "unknown": 4
+      },
+      "distributed_integration_access": {
+        "open_self_serve": 6,
+        "unknown": 3,
+        "customer_managed_only": 1
+      },
+      "auth_methods": {
+        "bearer_token": 10,
+        "oauth2": 10,
+        "oauth2_pkce": 4,
+        "personal_access_token": 3,
+        "api_key": 7,
+        "service_account": 3,
+        "oauth2_client_credentials": 2,
+        "basic_auth": 3,
+        "jwt": 2
+      },
+      "official_mcp": 9,
+      "product_action_mcp": 9,
+      "composio_toolkit": 8
+    },
+    "finance_payments": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 9,
+        "unknown": 1
+      },
+      "customer_credential_access": {
+        "self_serve_free": 4,
+        "vendor_approval_required": 1,
+        "unknown": 4,
+        "admin_required": 1
+      },
+      "distributed_integration_access": {
+        "customer_managed_only": 2,
+        "vendor_approval_required": 2,
+        "app_review_required": 1,
+        "unknown": 3,
+        "partner_program_required": 1,
+        "open_self_serve": 1
+      },
+      "auth_methods": {
+        "api_key": 7,
+        "oauth2": 7,
+        "unknown": 1,
+        "bearer_token": 5,
+        "oauth1": 1,
+        "jwt": 2,
+        "oauth2_pkce": 1,
+        "basic_auth": 1
+      },
+      "official_mcp": 8,
+      "product_action_mcp": 7,
+      "composio_toolkit": 5
+    },
+    "ai_media": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 8,
+        "unknown": 1,
+        "limited": 1
+      },
+      "customer_credential_access": {
+        "unknown": 2,
+        "vendor_approval_required": 1,
+        "self_serve_free": 5,
+        "not_applicable": 1,
+        "self_serve_paid": 1
+      },
+      "distributed_integration_access": {
+        "unknown": 2,
+        "customer_managed_only": 4,
+        "open_self_serve": 2,
+        "not_applicable": 1,
+        "vendor_approval_required": 1
+      },
+      "auth_methods": {
+        "bearer_token": 6,
+        "oauth2": 3,
+        "api_key": 7,
+        "personal_access_token": 2,
+        "service_account": 1,
+        "not_applicable": 1,
+        "oauth2_pkce": 1
+      },
+      "official_mcp": 7,
+      "product_action_mcp": 5,
+      "composio_toolkit": 4
+    }
+  },
+  "calculationDefinitions": {
+    "percentages": "Percentages are computed from the frozen 100-app records and rounded to one decimal place for display.",
+    "legacy": "Legacy credential_access and production_access remain in the audit data but do not drive headline recommendations.",
+    "ranking": "Opportunity scores are deterministic triage scores, not probabilities; ties break alphabetically.",
+    "holdout": "Holdout metrics use the exact saved 30-app comparison_rows and exclude obsolete production_access.",
+    "schemaRepair": "Schema-repair acceptance is accepted_v2_values divided by repaired_field_count from the same holdout's immutable v1→v2 comparison."
+  },
+  "sourceArtifactHashes": {
+    "apps.json": "7b57ab35a467f6057cc577611bfeb09c37b75865a084d2873b4ab7bf55cf03e1",
+    "evidence_ledger.json": "b417f8050fd3475189622b074f700377a9e6fa942e0655ae2c9888cf6203c298",
+    "metrics.json": "09f804104a204f785bf16701caac9c8c48e3c7a8d418d94821e0393368cfb21b",
+    "analysis.json": "ae4f7a94480ca0f89540cb4a838993778c5a948c56a9a078a7ff331930f9cf47",
+    "holdout_metrics.json": "df18b203606efb4fe8ef2e0ddb080ea0099140943b0aa5ff392ae4a643dd7882",
+    "human_adjudication.json": "b6c3fcae15313d1147ea1a7ebfdca1f64d29ca3c35a875b4c412308b1368126e",
+    "consistency_sweeps.json": "dc47a9e0a4918e3fb13b1bfa8b9ac209b58f86fa516842f41f7713d05fad77e7",
+    "verification.json": "24eebcfe9bca210c3559e6d29b44709fa169a7c56b802adf335d173f8c16a59c",
+    "validation.json": "f7e2cb65562875f49b423ff5a5e2b5136310406486badb6be1141174ba1ea0bc",
+    "corrections.json": "79c28b60c0b6c19875d5ded40d24d83ef6a4f1d2fa0d3e5d365077d877bf761e"
+  },
+  "metricSanityCheck": {
+    "officialMcpCount": 75,
+    "lifecycleAmongOfficial": {
+      "beta": 7,
+      "unknown": 67,
+      "public_preview": 1
+    },
+    "lifecycleAcrossAllApps": {
+      "beta": 7,
+      "unknown": 92,
+      "public_preview": 1
+    },
+    "explanation": "The 67 figure is scoped to the 75 apps with confirmed official MCP ownership. The 92 figure counts every app whose lifecycle is unknown: 67 official MCPs without a documented lifecycle label plus 25 apps without confirmed official MCP ownership.",
+    "calculation": "unknown lifecycle across all apps = unknown lifecycle among official MCP apps + apps without confirmed official MCP ownership"
+  },
+  "displayedNumberPolicy": "Every number shown by the case study is read from this generated object; this file is derived from the frozen artifacts and does not contain research classifications."
+}

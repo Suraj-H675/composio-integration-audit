@@ -1,0 +1,27 @@
+{
+  "dataset_status": "frozen",
+  "dataset_id": "2026-08-28.final.v2",
+  "schema_version": "2026-08-28.full-run.v2",
+  "rubric_version": "2026-08-28.full-run.v2",
+  "app_count": 100,
+  "holdout_size": 30,
+  "human_review_status": "complete",
+  "frozen_at": "2026-08-28T17:10:07.691Z",
+  "source_ledger_count": 876,
+  "paid_cost": 0,
+  "paid_cost_usd": 0,
+  "artifact_hashes": {
+    "apps.json": "7b57ab35a467f6057cc577611bfeb09c37b75865a084d2873b4ab7bf55cf03e1",
+    "evidence_ledger.json": "b417f8050fd3475189622b074f700377a9e6fa942e0655ae2c9888cf6203c298",
+    "metrics.json": "09f804104a204f785bf16701caac9c8c48e3c7a8d418d94821e0393368cfb21b",
+    "analysis.json": "ae4f7a94480ca0f89540cb4a838993778c5a948c56a9a078a7ff331930f9cf47",
+    "holdout_metrics.json": "df18b203606efb4fe8ef2e0ddb080ea0099140943b0aa5ff392ae4a643dd7882",
+    "human_adjudication.json": "b6c3fcae15313d1147ea1a7ebfdca1f64d29ca3c35a875b4c412308b1368126e",
+    "consistency_sweeps.json": "dc47a9e0a4918e3fb13b1bfa8b9ac209b58f86fa516842f41f7713d05fad77e7",
+    "verification.json": "24eebcfe9bca210c3559e6d29b44709fa169a7c56b802adf335d173f8c16a59c",
+    "validation.json": "f7e2cb65562875f49b423ff5a5e2b5136310406486badb6be1141174ba1ea0bc",
+    "corrections.json": "79c28b60c0b6c19875d5ded40d24d83ef6a4f1d2fa0d3e5d365077d877bf761e"
+  },
+  "holdout_hash": "729ad14f8562820c57ef3bab62355d009dc73f0b341b0aacc22dfdecf03024f3",
+  "notes": "The exact preregistered 30-app holdout was human-approved. No new network fetches or paid services were used during finalization."
+}

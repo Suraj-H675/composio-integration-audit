@@ -1,0 +1,787 @@
+{
+  "dataset_id": "2026-08-28.final.v2",
+  "schema_version": "2026-08-28.full-run.v2",
+  "generated_at": "2026-08-28T17:10:07.691Z",
+  "insights": [
+    {
+      "title": "Credential access and distribution are different bottlenecks",
+      "statement": "11 apps let customers obtain credentials through a self-serve path while public distribution is gated.",
+      "basis": "customer_credential_access plus distributed_integration_access"
+    },
+    {
+      "title": "Technical feasibility is broader than immediate launchability",
+      "statement": "96 of 100 apps (96%) are technically buildable, while 20 have a documented distribution gate and 27 are open self-serve.",
+      "basis": "technical_buildability plus distributed_integration_access"
+    },
+    {
+      "title": "MCP capability matters more than raw MCP presence",
+      "statement": "75 apps have an official MCP; 65 are classified as product-action and 2 as documentation-only.",
+      "basis": "vendor_official_mcp plus vendor_mcp_type"
+    },
+    {
+      "title": "Product-action MCPs without native coverage are a concrete opportunity",
+      "statement": "24 product-action MCP apps have no current Composio toolkit in the catalog snapshot.",
+      "basis": "vendor_mcp_type plus composio_toolkit_exists"
+    },
+    {
+      "title": "Identity uncertainty is an explicit outcome",
+      "statement": "2 apps remain unresolved rather than being assigned to a similarly named product.",
+      "basis": "identity.status"
+    },
+    {
+      "title": "Human review changed semantics, not just labels",
+      "statement": "86 holdout fields changed in v1→v2 repair; 15 still needed human correction after the repair.",
+      "basis": "immutable holdout before/after comparison"
+    }
+  ],
+  "engineering_easy_wins": [
+    "Twenty",
+    "Podio",
+    "GoHighLevel",
+    "SE Ranking",
+    "Clay",
+    "Netlify"
+  ],
+  "partnership_review_opportunities": [
+    "WhatsApp Business",
+    "Aircall",
+    "BigCommerce",
+    "Squarespace",
+    "Amazon Selling Partner",
+    "Plaid",
+    "Binance",
+    "Grain"
+  ],
+  "customer_managed_only_opportunities": [
+    "Freshdesk",
+    "LiveAgent",
+    "Twilio",
+    "Zoho Cliq",
+    "Vonage",
+    "systeme.io",
+    "SendGrid",
+    "WooCommerce",
+    "MrScraper",
+    "Firecrawl",
+    "Bright Data",
+    "Waterfall.io",
+    "GitHub",
+    "Cloudflare",
+    "Neo4j",
+    "MongoDB Atlas",
+    "Asana",
+    "Stripe",
+    "iPayX",
+    "Otter AI",
+    "Reducto",
+    "Devin",
+    "higgsfield"
+  ],
+  "ranked_opportunity_buckets": {
+    "engineering_easy_wins": [
+      {
+        "rank": 1,
+        "app": "Clay",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 2,
+        "app": "GoHighLevel",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 3,
+        "app": "Netlify",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 4,
+        "app": "Podio",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 5,
+        "app": "Twenty",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 6,
+        "app": "SE Ranking",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_trial customer credentials"
+        ]
+      }
+    ],
+    "partnership_review_opportunities": [
+      {
+        "rank": 1,
+        "app": "Aircall",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "partner_program_required"
+        ]
+      },
+      {
+        "rank": 2,
+        "app": "Amazon Selling Partner",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      },
+      {
+        "rank": 3,
+        "app": "BigCommerce",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      },
+      {
+        "rank": 4,
+        "app": "Binance",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      },
+      {
+        "rank": 5,
+        "app": "Grain",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "vendor_approval_required"
+        ]
+      },
+      {
+        "rank": 6,
+        "app": "Plaid",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "vendor_approval_required"
+        ]
+      },
+      {
+        "rank": 7,
+        "app": "Squarespace",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      },
+      {
+        "rank": 8,
+        "app": "WhatsApp Business",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      }
+    ],
+    "customer_managed_only_opportunities": [
+      {
+        "rank": 1,
+        "app": "Devin",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 2,
+        "app": "higgsfield",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 3,
+        "app": "iPayX",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 4,
+        "app": "LiveAgent",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 5,
+        "app": "MongoDB Atlas",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 6,
+        "app": "Otter AI",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 7,
+        "app": "Reducto",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 8,
+        "app": "systeme.io",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 9,
+        "app": "Twilio",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 10,
+        "app": "Vonage",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 11,
+        "app": "Waterfall.io",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 12,
+        "app": "WooCommerce",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 13,
+        "app": "Zoho Cliq",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 14,
+        "app": "Asana",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 15,
+        "app": "Bright Data",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 16,
+        "app": "Cloudflare",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 17,
+        "app": "Firecrawl",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 18,
+        "app": "Freshdesk",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 19,
+        "app": "GitHub",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 20,
+        "app": "MrScraper",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 21,
+        "app": "Neo4j",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 22,
+        "app": "SendGrid",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 23,
+        "app": "Stripe",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      }
+    ],
+    "scoring": "Scores use bucket-specific fixed eligibility bases, fixed bonuses for the preferred API/customer-access/no-toolkit conditions, and 0–2 for the presence of high/medium evidence quality; ties break alphabetically. Scores rank triage order and are not probabilities."
+  },
+  "category_patterns": {
+    "crm_sales": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "admin_required": 2,
+        "self_serve_free": 5,
+        "unknown": 3
+      },
+      "distributed_integration_access": {
+        "unknown": 4,
+        "app_review_required": 2,
+        "open_self_serve": 4
+      },
+      "auth_methods": {
+        "oauth2": 9,
+        "oauth2_pkce": 2,
+        "api_key": 8,
+        "bearer_token": 5,
+        "basic_auth": 3,
+        "oauth2_client_credentials": 2
+      },
+      "official_mcp": 8,
+      "product_action_mcp": 8,
+      "composio_toolkit": 5
+    },
+    "customer_support": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "unknown": 3,
+        "self_serve_free": 2,
+        "self_serve_trial": 2,
+        "admin_required": 3
+      },
+      "distributed_integration_access": {
+        "unknown": 3,
+        "open_self_serve": 3,
+        "customer_managed_only": 2,
+        "enterprise_contract_required": 1,
+        "app_review_required": 1
+      },
+      "auth_methods": {
+        "api_key": 6,
+        "bearer_token": 8,
+        "basic_auth": 4,
+        "oauth2": 5,
+        "jwt": 2,
+        "service_account": 1,
+        "oauth2_pkce": 1
+      },
+      "official_mcp": 6,
+      "product_action_mcp": 6,
+      "composio_toolkit": 6
+    },
+    "communication": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "unknown": 3,
+        "self_serve_free": 5,
+        "vendor_approval_required": 1,
+        "admin_required": 1
+      },
+      "distributed_integration_access": {
+        "unknown": 3,
+        "customer_managed_only": 3,
+        "open_self_serve": 2,
+        "app_review_required": 1,
+        "partner_program_required": 1
+      },
+      "auth_methods": {
+        "oauth2": 6,
+        "bearer_token": 5,
+        "oauth2_client_credentials": 1,
+        "api_key": 6,
+        "basic_auth": 4,
+        "unknown": 1,
+        "jwt": 2,
+        "service_account": 1
+      },
+      "official_mcp": 7,
+      "product_action_mcp": 6,
+      "composio_toolkit": 4
+    },
+    "marketing_analytics": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "self_serve_free": 6,
+        "unknown": 2,
+        "vendor_approval_required": 2
+      },
+      "distributed_integration_access": {
+        "unknown": 3,
+        "app_review_required": 4,
+        "open_self_serve": 1,
+        "customer_managed_only": 2
+      },
+      "auth_methods": {
+        "oauth2": 7,
+        "bearer_token": 7,
+        "service_account": 1,
+        "api_key": 6,
+        "oauth2_pkce": 1,
+        "basic_auth": 2
+      },
+      "official_mcp": 6,
+      "product_action_mcp": 6,
+      "composio_toolkit": 7
+    },
+    "commerce": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 9,
+        "unknown": 1
+      },
+      "customer_credential_access": {
+        "self_serve_free": 5,
+        "unknown": 3,
+        "self_serve_trial": 1,
+        "vendor_approval_required": 1
+      },
+      "distributed_integration_access": {
+        "app_review_required": 4,
+        "customer_managed_only": 1,
+        "unknown": 3,
+        "open_self_serve": 2
+      },
+      "auth_methods": {
+        "oauth2": 7,
+        "api_key": 3,
+        "jwt": 3,
+        "oauth1": 2,
+        "basic_auth": 2,
+        "personal_access_token": 1,
+        "bearer_token": 5,
+        "unknown": 1
+      },
+      "official_mcp": 5,
+      "product_action_mcp": 3,
+      "composio_toolkit": 2
+    },
+    "data_seo_scraping": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "unknown": 3,
+        "self_serve_trial": 1,
+        "admin_required": 1,
+        "self_serve_free": 4,
+        "vendor_approval_required": 1
+      },
+      "distributed_integration_access": {
+        "unknown": 3,
+        "open_self_serve": 2,
+        "app_review_required": 1,
+        "customer_managed_only": 4
+      },
+      "auth_methods": {
+        "api_key": 9,
+        "basic_auth": 1,
+        "oauth2": 3,
+        "bearer_token": 6,
+        "unknown": 1
+      },
+      "official_mcp": 9,
+      "product_action_mcp": 6,
+      "composio_toolkit": 6
+    },
+    "developer_tools": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "self_serve_free": 8,
+        "unknown": 1,
+        "admin_required": 1
+      },
+      "distributed_integration_access": {
+        "customer_managed_only": 4,
+        "unknown": 2,
+        "open_self_serve": 4
+      },
+      "auth_methods": {
+        "personal_access_token": 4,
+        "oauth2": 10,
+        "bearer_token": 9,
+        "api_key": 6,
+        "jwt": 4,
+        "basic_auth": 5,
+        "service_account": 3,
+        "oauth2_pkce": 1
+      },
+      "official_mcp": 10,
+      "product_action_mcp": 9,
+      "composio_toolkit": 8
+    },
+    "productivity": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "self_serve_free": 6,
+        "unknown": 4
+      },
+      "distributed_integration_access": {
+        "open_self_serve": 6,
+        "unknown": 3,
+        "customer_managed_only": 1
+      },
+      "auth_methods": {
+        "bearer_token": 10,
+        "oauth2": 10,
+        "oauth2_pkce": 4,
+        "personal_access_token": 3,
+        "api_key": 7,
+        "service_account": 3,
+        "oauth2_client_credentials": 2,
+        "basic_auth": 3,
+        "jwt": 2
+      },
+      "official_mcp": 9,
+      "product_action_mcp": 9,
+      "composio_toolkit": 8
+    },
+    "finance_payments": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 9,
+        "unknown": 1
+      },
+      "customer_credential_access": {
+        "self_serve_free": 4,
+        "vendor_approval_required": 1,
+        "unknown": 4,
+        "admin_required": 1
+      },
+      "distributed_integration_access": {
+        "customer_managed_only": 2,
+        "vendor_approval_required": 2,
+        "app_review_required": 1,
+        "unknown": 3,
+        "partner_program_required": 1,
+        "open_self_serve": 1
+      },
+      "auth_methods": {
+        "api_key": 7,
+        "oauth2": 7,
+        "unknown": 1,
+        "bearer_token": 5,
+        "oauth1": 1,
+        "jwt": 2,
+        "oauth2_pkce": 1,
+        "basic_auth": 1
+      },
+      "official_mcp": 8,
+      "product_action_mcp": 7,
+      "composio_toolkit": 5
+    },
+    "ai_media": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 8,
+        "unknown": 1,
+        "limited": 1
+      },
+      "customer_credential_access": {
+        "unknown": 2,
+        "vendor_approval_required": 1,
+        "self_serve_free": 5,
+        "not_applicable": 1,
+        "self_serve_paid": 1
+      },
+      "distributed_integration_access": {
+        "unknown": 2,
+        "customer_managed_only": 4,
+        "open_self_serve": 2,
+        "not_applicable": 1,
+        "vendor_approval_required": 1
+      },
+      "auth_methods": {
+        "bearer_token": 6,
+        "oauth2": 3,
+        "api_key": 7,
+        "personal_access_token": 2,
+        "service_account": 1,
+        "not_applicable": 1,
+        "oauth2_pkce": 1
+      },
+      "official_mcp": 7,
+      "product_action_mcp": 5,
+      "composio_toolkit": 4
+    }
+  },
+  "note": "All values are deterministic computations from the frozen dataset. Lists are included so the headline counts remain auditable."
+}

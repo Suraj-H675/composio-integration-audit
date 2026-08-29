@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "rubric_version": "2026-08-28.full-run.v2",
+  "status": "pre_registered",
+  "sample_size": 30,
+  "fields": [
+    "identity",
+    "description",
+    "auth_methods",
+    "primary_auth",
+    "credential_access",
+    "customer_credential_access",
+    "sandbox_access",
+    "production_access",
+    "distributed_integration_access",
+    "public_api_available",
+    "api_styles",
+    "api_breadth",
+    "webhooks",
+    "vendor_official_mcp",
+    "vendor_mcp_type",
+    "vendor_mcp_stage",
+    "community_mcp",
+    "composio_toolkit_exists",
+    "technical_buildability",
+    "commercial_friction",
+    "setup_friction",
+    "main_blocker"
+  ],
+  "sampling": {
+    "method": "stratified deterministic sample from the locked 100-app manifest",
+    "stratified_categories": 10,
+    "per_category_minimum": 2,
+    "additional_risk_strata": [
+      "high and low evidence quality",
+      "self-serve and gated/approval/admin/partner access",
+      "MCP true, false, and unknown with lifecycle stages",
+      "technical buildability yes, limited, no, and unknown",
+      "straightforward and identity/access risky"
+    ],
+    "selection_key": "sha256(canonical_app_id + fixed_sample_salt)",
+    "fixed_sample_salt": "agent-buildability-audit-accuracy-v2",
+    "fixed_before_outcomes": true
+  },
+  "ground_truth": {
+    "method": "human review of the locked sample using current first-party evidence, with field-level decisions and unresolved values retained when evidence cannot establish a label",
+    "evidence_priority": ["official_vendor_docs", "official_vendor_github", "official_catalog_for_composio_only", "secondary_only_if_primary_absent"],
+    "blindness": "reviewers lock labels from the evidence packet before seeing researcher/verifier labels",
+    "disagreement": "record a field-level adjudication, correction reason, and supporting URL; never silently overwrite the run"
+  },
+  "labels": ["correct", "partial", "wrong", "unverifiable"],
+  "scoring": {
+    "correct": "value and material qualification match the locked human ground truth",
+    "partial": "core direction is right but a material qualifier, access tier, MCP stage, or friction distinction is incomplete",
+    "wrong": "value contradicts the locked human ground truth",
+    "unverifiable": "ground truth cannot be established from accessible current evidence",
+    "corrections": "report first-pass and final metrics with denominators; exclude unverifiable fields from correctness rates and show their count separately"
+  }
+}

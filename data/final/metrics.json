@@ -1,0 +1,6022 @@
+{
+  "dataset_id": "2026-08-28.final.v2",
+  "schema_version": "2026-08-28.full-run.v2",
+  "generated_at": "2026-08-28T17:10:07.691Z",
+  "app_count": 100,
+  "source_ledger_count": 876,
+  "unique_source_url_count": 810,
+  "live_source_count": 868,
+  "retrieval_method_counts": {
+    "http": 843,
+    "browser": 33
+  },
+  "claim_count": 2100,
+  "claim_coverage": {
+    "supported_or_unknown_claims": 2082,
+    "denominator": 2100
+  },
+  "unknown_field_count": 425,
+  "unknown_field_denominator": 1900,
+  "unknown_field_rate": 0.2236842105263158,
+  "unknown_fields_by_field": {
+    "description": 1,
+    "auth_methods": 4,
+    "primary_auth": 4,
+    "customer_credential_access": 28,
+    "sandbox_access": 59,
+    "distributed_integration_access": 29,
+    "public_api_available": 3,
+    "api_styles": 3,
+    "api_breadth": 2,
+    "webhooks": 16,
+    "vendor_official_mcp": 25,
+    "vendor_mcp_type": 27,
+    "vendor_mcp_stage": 92,
+    "community_mcp": 100,
+    "composio_toolkit_exists": 0,
+    "technical_buildability": 3,
+    "commercial_friction": 25,
+    "setup_friction": 2,
+    "main_blocker": 2
+  },
+  "legacy_unknown_fields_by_field": {
+    "credential_access": 3,
+    "production_access": 38
+  },
+  "evidence_quality_distribution": {
+    "medium": 1080,
+    "high": 577,
+    "low": 443
+  },
+  "identity_distribution": {
+    "confirmed": 98,
+    "unresolved": 2
+  },
+  "technical_buildability_distribution": {
+    "yes": 96,
+    "unknown": 3,
+    "limited": 1
+  },
+  "customer_credential_access_distribution": {
+    "admin_required": 9,
+    "self_serve_free": 50,
+    "unknown": 28,
+    "self_serve_trial": 4,
+    "vendor_approval_required": 7,
+    "not_applicable": 1,
+    "self_serve_paid": 1
+  },
+  "distributed_integration_access_distribution": {
+    "unknown": 29,
+    "app_review_required": 14,
+    "open_self_serve": 27,
+    "customer_managed_only": 23,
+    "enterprise_contract_required": 1,
+    "partner_program_required": 2,
+    "vendor_approval_required": 3,
+    "not_applicable": 1
+  },
+  "auth_method_distribution": {
+    "oauth2": 67,
+    "oauth2_pkce": 11,
+    "api_key": 65,
+    "bearer_token": 66,
+    "basic_auth": 25,
+    "oauth2_client_credentials": 5,
+    "jwt": 15,
+    "service_account": 10,
+    "unknown": 4,
+    "oauth1": 3,
+    "personal_access_token": 10,
+    "not_applicable": 1
+  },
+  "primary_auth_distribution": {
+    "oauth2": 15,
+    "api_key": 39,
+    "bearer_token": 32,
+    "jwt": 1,
+    "unknown": 4,
+    "personal_access_token": 8,
+    "not_applicable": 1
+  },
+  "api_style_distribution": {
+    "rest": 70,
+    "sdk_only": 21,
+    "graphql": 17,
+    "websocket": 5,
+    "grpc": 1,
+    "rpc": 6,
+    "unknown": 3
+  },
+  "public_api_available_distribution": {
+    "yes": 95,
+    "unknown": 3,
+    "limited": 2
+  },
+  "api_breadth_distribution": {
+    "broad": 75,
+    "action_specific": 18,
+    "moderate": 4,
+    "unknown": 2,
+    "narrow": 1
+  },
+  "webhooks_distribution": {
+    "yes": 84,
+    "unknown": 16
+  },
+  "sandbox_access_distribution": {
+    "self_serve_free": 17,
+    "self_serve_trial": 3,
+    "unknown": 59,
+    "admin_required": 13,
+    "approval_required": 4,
+    "partner_gated": 1,
+    "self_serve_paid": 1,
+    "not_applicable": 1,
+    "unavailable": 1
+  },
+  "community_mcp_distribution": {
+    "unknown": 100
+  },
+  "commercial_friction_distribution": {
+    "unknown": 25,
+    "usage_pricing": 23,
+    "free_tier_limited": 26,
+    "enterprise_plan_required": 11,
+    "paid_plan_required": 14,
+    "none": 1
+  },
+  "setup_friction_distribution": {
+    "admin_configuration": 30,
+    "oauth_configuration": 47,
+    "app_review": 10,
+    "none": 9,
+    "unknown": 2,
+    "merchant_underwriting": 2
+  },
+  "main_blocker_distribution": {
+    "none": 96,
+    "unknown": 2,
+    "identity_unresolved": 1,
+    "interface_limited": 1
+  },
+  "official_mcp_count": 75,
+  "vendor_mcp_type_distribution": {
+    "product_action": 65,
+    "documentation": 2,
+    "mixed": 6,
+    "unknown": 2
+  },
+  "mcp_lifecycle_distribution": {
+    "beta": 7,
+    "unknown": 67,
+    "public_preview": 1
+  },
+  "product_action_official_mcp_count": 65,
+  "documentation_only_official_mcp_count": 2,
+  "developer_tooling_official_mcp_count": 0,
+  "mixed_official_mcp_count": 6,
+  "unknown_mcp_type_count": 2,
+  "composio_toolkit_coverage": {
+    "yes": 55,
+    "no": 45,
+    "unknown": 0,
+    "catalog_snapshot": "2026-08-28T09:55:49.874Z"
+  },
+  "public_apis_absent_from_composio": [
+    "Twenty",
+    "Podio",
+    "Zoho CRM",
+    "Copper",
+    "DealCloud",
+    "Front",
+    "Pylon",
+    "LiveAgent",
+    "Gladly",
+    "Twilio",
+    "Zoho Cliq",
+    "Lark (Larksuite)",
+    "WhatsApp Business",
+    "Aircall",
+    "Vonage",
+    "GoHighLevel",
+    "systeme.io",
+    "Threads (Meta)",
+    "WooCommerce",
+    "BigCommerce",
+    "Salesforce Commerce Cloud",
+    "Magento (Adobe Commerce)",
+    "Squarespace",
+    "Ecwid",
+    "Amazon Selling Partner",
+    "SE Ranking",
+    "Sherlock",
+    "Waterfall.io",
+    "Clay",
+    "Netlify",
+    "MongoDB Atlas",
+    "Monday.com",
+    "Smartsheet",
+    "Plaid",
+    "Binance",
+    "iPayX",
+    "Otter AI",
+    "Reducto",
+    "Devin",
+    "higgsfield",
+    "Grain"
+  ],
+  "technically_buildable_absent_from_composio": [
+    "Twenty",
+    "Podio",
+    "Zoho CRM",
+    "Copper",
+    "DealCloud",
+    "Front",
+    "Pylon",
+    "LiveAgent",
+    "Gladly",
+    "Twilio",
+    "Zoho Cliq",
+    "Lark (Larksuite)",
+    "WhatsApp Business",
+    "Aircall",
+    "Vonage",
+    "GoHighLevel",
+    "systeme.io",
+    "Threads (Meta)",
+    "WooCommerce",
+    "BigCommerce",
+    "Salesforce Commerce Cloud",
+    "Magento (Adobe Commerce)",
+    "Squarespace",
+    "Ecwid",
+    "Amazon Selling Partner",
+    "SE Ranking",
+    "Sherlock",
+    "Waterfall.io",
+    "Clay",
+    "Netlify",
+    "MongoDB Atlas",
+    "Monday.com",
+    "Smartsheet",
+    "Plaid",
+    "Binance",
+    "iPayX",
+    "PitchBook",
+    "Otter AI",
+    "Reducto",
+    "Devin",
+    "higgsfield",
+    "Grain"
+  ],
+  "official_mcp_without_composio": [
+    "Twenty",
+    "Zoho CRM",
+    "DealCloud",
+    "Front",
+    "Pylon",
+    "Twilio",
+    "Zoho Cliq",
+    "Aircall",
+    "Vonage",
+    "GoHighLevel",
+    "systeme.io",
+    "WooCommerce",
+    "BigCommerce",
+    "Salesforce Commerce Cloud",
+    "SE Ranking",
+    "Sherlock",
+    "Clay",
+    "Netlify",
+    "MongoDB Atlas",
+    "Monday.com",
+    "Smartsheet",
+    "Plaid",
+    "iPayX",
+    "PitchBook",
+    "Otter AI",
+    "Reducto",
+    "Devin",
+    "higgsfield",
+    "Grain"
+  ],
+  "product_action_mcp_without_composio": [
+    "Twenty",
+    "Zoho CRM",
+    "DealCloud",
+    "Front",
+    "Pylon",
+    "Twilio",
+    "Zoho Cliq",
+    "Aircall",
+    "GoHighLevel",
+    "systeme.io",
+    "Salesforce Commerce Cloud",
+    "Sherlock",
+    "Clay",
+    "Netlify",
+    "MongoDB Atlas",
+    "Monday.com",
+    "Smartsheet",
+    "Plaid",
+    "iPayX",
+    "Otter AI",
+    "Reducto",
+    "Devin",
+    "higgsfield",
+    "Grain"
+  ],
+  "engineering_easy_wins": [
+    "Twenty",
+    "Podio",
+    "GoHighLevel",
+    "SE Ranking",
+    "Clay",
+    "Netlify"
+  ],
+  "partnership_review_opportunities": [
+    "WhatsApp Business",
+    "Aircall",
+    "BigCommerce",
+    "Squarespace",
+    "Amazon Selling Partner",
+    "Plaid",
+    "Binance",
+    "Grain"
+  ],
+  "customer_managed_only_opportunities": [
+    "Freshdesk",
+    "LiveAgent",
+    "Twilio",
+    "Zoho Cliq",
+    "Vonage",
+    "systeme.io",
+    "SendGrid",
+    "WooCommerce",
+    "MrScraper",
+    "Firecrawl",
+    "Bright Data",
+    "Waterfall.io",
+    "GitHub",
+    "Cloudflare",
+    "Neo4j",
+    "MongoDB Atlas",
+    "Asana",
+    "Stripe",
+    "iPayX",
+    "Otter AI",
+    "Reducto",
+    "Devin",
+    "higgsfield"
+  ],
+  "ranked_opportunity_buckets": {
+    "engineering_easy_wins": [
+      {
+        "rank": 1,
+        "app": "Clay",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 2,
+        "app": "GoHighLevel",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 3,
+        "app": "Netlify",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 4,
+        "app": "Podio",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 5,
+        "app": "Twenty",
+        "score": 11,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_free customer credentials"
+        ]
+      },
+      {
+        "rank": 6,
+        "app": "SE Ranking",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "open_self_serve distribution",
+          "self_serve_trial customer credentials"
+        ]
+      }
+    ],
+    "partnership_review_opportunities": [
+      {
+        "rank": 1,
+        "app": "Aircall",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "partner_program_required"
+        ]
+      },
+      {
+        "rank": 2,
+        "app": "Amazon Selling Partner",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      },
+      {
+        "rank": 3,
+        "app": "BigCommerce",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      },
+      {
+        "rank": 4,
+        "app": "Binance",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      },
+      {
+        "rank": 5,
+        "app": "Grain",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "vendor_approval_required"
+        ]
+      },
+      {
+        "rank": 6,
+        "app": "Plaid",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "vendor_approval_required"
+        ]
+      },
+      {
+        "rank": 7,
+        "app": "Squarespace",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      },
+      {
+        "rank": 8,
+        "app": "WhatsApp Business",
+        "score": 10,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "no Composio toolkit",
+          "app_review_required"
+        ]
+      }
+    ],
+    "customer_managed_only_opportunities": [
+      {
+        "rank": 1,
+        "app": "Devin",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 2,
+        "app": "higgsfield",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 3,
+        "app": "iPayX",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 4,
+        "app": "LiveAgent",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 5,
+        "app": "MongoDB Atlas",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 6,
+        "app": "Otter AI",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 7,
+        "app": "Reducto",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 8,
+        "app": "systeme.io",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 9,
+        "app": "Twilio",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 10,
+        "app": "Vonage",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 11,
+        "app": "Waterfall.io",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 12,
+        "app": "WooCommerce",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 13,
+        "app": "Zoho Cliq",
+        "score": 8,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 14,
+        "app": "Asana",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 15,
+        "app": "Bright Data",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 16,
+        "app": "Cloudflare",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 17,
+        "app": "Firecrawl",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 18,
+        "app": "Freshdesk",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 19,
+        "app": "GitHub",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 20,
+        "app": "MrScraper",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 21,
+        "app": "Neo4j",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 22,
+        "app": "SendGrid",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      },
+      {
+        "rank": 23,
+        "app": "Stripe",
+        "score": 7,
+        "reasons": [
+          "technical_buildability=yes",
+          "useful API or product-action MCP",
+          "customer_managed_only distribution"
+        ]
+      }
+    ],
+    "scoring": "Scores use bucket-specific fixed eligibility bases, fixed bonuses for the preferred API/customer-access/no-toolkit conditions, and 0–2 for the presence of high/medium evidence quality; ties break alphabetically. Scores rank triage order and are not probabilities."
+  },
+  "product_ops_questions": {
+    "easy_open_distribution_count": 27,
+    "app_review_count": 14,
+    "partner_program_count": 2,
+    "vendor_approval_count": 3,
+    "enterprise_contract_count": 1,
+    "customer_managed_only_count": 23,
+    "customers_easy_but_distribution_gated": [
+      "HubSpot",
+      "Close",
+      "Plain",
+      "Aircall",
+      "Mailchimp",
+      "Klaviyo",
+      "Shopify",
+      "BigCommerce",
+      "Squarespace",
+      "Binance",
+      "Grain"
+    ],
+    "product_action_mcp_absent_from_composio_count": 24
+  },
+  "category_patterns": {
+    "crm_sales": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "admin_required": 2,
+        "self_serve_free": 5,
+        "unknown": 3
+      },
+      "distributed_integration_access": {
+        "unknown": 4,
+        "app_review_required": 2,
+        "open_self_serve": 4
+      },
+      "auth_methods": {
+        "oauth2": 9,
+        "oauth2_pkce": 2,
+        "api_key": 8,
+        "bearer_token": 5,
+        "basic_auth": 3,
+        "oauth2_client_credentials": 2
+      },
+      "official_mcp": 8,
+      "product_action_mcp": 8,
+      "composio_toolkit": 5
+    },
+    "customer_support": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "unknown": 3,
+        "self_serve_free": 2,
+        "self_serve_trial": 2,
+        "admin_required": 3
+      },
+      "distributed_integration_access": {
+        "unknown": 3,
+        "open_self_serve": 3,
+        "customer_managed_only": 2,
+        "enterprise_contract_required": 1,
+        "app_review_required": 1
+      },
+      "auth_methods": {
+        "api_key": 6,
+        "bearer_token": 8,
+        "basic_auth": 4,
+        "oauth2": 5,
+        "jwt": 2,
+        "service_account": 1,
+        "oauth2_pkce": 1
+      },
+      "official_mcp": 6,
+      "product_action_mcp": 6,
+      "composio_toolkit": 6
+    },
+    "communication": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "unknown": 3,
+        "self_serve_free": 5,
+        "vendor_approval_required": 1,
+        "admin_required": 1
+      },
+      "distributed_integration_access": {
+        "unknown": 3,
+        "customer_managed_only": 3,
+        "open_self_serve": 2,
+        "app_review_required": 1,
+        "partner_program_required": 1
+      },
+      "auth_methods": {
+        "oauth2": 6,
+        "bearer_token": 5,
+        "oauth2_client_credentials": 1,
+        "api_key": 6,
+        "basic_auth": 4,
+        "unknown": 1,
+        "jwt": 2,
+        "service_account": 1
+      },
+      "official_mcp": 7,
+      "product_action_mcp": 6,
+      "composio_toolkit": 4
+    },
+    "marketing_analytics": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "self_serve_free": 6,
+        "unknown": 2,
+        "vendor_approval_required": 2
+      },
+      "distributed_integration_access": {
+        "unknown": 3,
+        "app_review_required": 4,
+        "open_self_serve": 1,
+        "customer_managed_only": 2
+      },
+      "auth_methods": {
+        "oauth2": 7,
+        "bearer_token": 7,
+        "service_account": 1,
+        "api_key": 6,
+        "oauth2_pkce": 1,
+        "basic_auth": 2
+      },
+      "official_mcp": 6,
+      "product_action_mcp": 6,
+      "composio_toolkit": 7
+    },
+    "commerce": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 9,
+        "unknown": 1
+      },
+      "customer_credential_access": {
+        "self_serve_free": 5,
+        "unknown": 3,
+        "self_serve_trial": 1,
+        "vendor_approval_required": 1
+      },
+      "distributed_integration_access": {
+        "app_review_required": 4,
+        "customer_managed_only": 1,
+        "unknown": 3,
+        "open_self_serve": 2
+      },
+      "auth_methods": {
+        "oauth2": 7,
+        "api_key": 3,
+        "jwt": 3,
+        "oauth1": 2,
+        "basic_auth": 2,
+        "personal_access_token": 1,
+        "bearer_token": 5,
+        "unknown": 1
+      },
+      "official_mcp": 5,
+      "product_action_mcp": 3,
+      "composio_toolkit": 2
+    },
+    "data_seo_scraping": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "unknown": 3,
+        "self_serve_trial": 1,
+        "admin_required": 1,
+        "self_serve_free": 4,
+        "vendor_approval_required": 1
+      },
+      "distributed_integration_access": {
+        "unknown": 3,
+        "open_self_serve": 2,
+        "app_review_required": 1,
+        "customer_managed_only": 4
+      },
+      "auth_methods": {
+        "api_key": 9,
+        "basic_auth": 1,
+        "oauth2": 3,
+        "bearer_token": 6,
+        "unknown": 1
+      },
+      "official_mcp": 9,
+      "product_action_mcp": 6,
+      "composio_toolkit": 6
+    },
+    "developer_tools": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "self_serve_free": 8,
+        "unknown": 1,
+        "admin_required": 1
+      },
+      "distributed_integration_access": {
+        "customer_managed_only": 4,
+        "unknown": 2,
+        "open_self_serve": 4
+      },
+      "auth_methods": {
+        "personal_access_token": 4,
+        "oauth2": 10,
+        "bearer_token": 9,
+        "api_key": 6,
+        "jwt": 4,
+        "basic_auth": 5,
+        "service_account": 3,
+        "oauth2_pkce": 1
+      },
+      "official_mcp": 10,
+      "product_action_mcp": 9,
+      "composio_toolkit": 8
+    },
+    "productivity": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 10
+      },
+      "customer_credential_access": {
+        "self_serve_free": 6,
+        "unknown": 4
+      },
+      "distributed_integration_access": {
+        "open_self_serve": 6,
+        "unknown": 3,
+        "customer_managed_only": 1
+      },
+      "auth_methods": {
+        "bearer_token": 10,
+        "oauth2": 10,
+        "oauth2_pkce": 4,
+        "personal_access_token": 3,
+        "api_key": 7,
+        "service_account": 3,
+        "oauth2_client_credentials": 2,
+        "basic_auth": 3,
+        "jwt": 2
+      },
+      "official_mcp": 9,
+      "product_action_mcp": 9,
+      "composio_toolkit": 8
+    },
+    "finance_payments": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 9,
+        "unknown": 1
+      },
+      "customer_credential_access": {
+        "self_serve_free": 4,
+        "vendor_approval_required": 1,
+        "unknown": 4,
+        "admin_required": 1
+      },
+      "distributed_integration_access": {
+        "customer_managed_only": 2,
+        "vendor_approval_required": 2,
+        "app_review_required": 1,
+        "unknown": 3,
+        "partner_program_required": 1,
+        "open_self_serve": 1
+      },
+      "auth_methods": {
+        "api_key": 7,
+        "oauth2": 7,
+        "unknown": 1,
+        "bearer_token": 5,
+        "oauth1": 1,
+        "jwt": 2,
+        "oauth2_pkce": 1,
+        "basic_auth": 1
+      },
+      "official_mcp": 8,
+      "product_action_mcp": 7,
+      "composio_toolkit": 5
+    },
+    "ai_media": {
+      "app_count": 10,
+      "technical_buildability": {
+        "yes": 8,
+        "unknown": 1,
+        "limited": 1
+      },
+      "customer_credential_access": {
+        "unknown": 2,
+        "vendor_approval_required": 1,
+        "self_serve_free": 5,
+        "not_applicable": 1,
+        "self_serve_paid": 1
+      },
+      "distributed_integration_access": {
+        "unknown": 2,
+        "customer_managed_only": 4,
+        "open_self_serve": 2,
+        "not_applicable": 1,
+        "vendor_approval_required": 1
+      },
+      "auth_methods": {
+        "bearer_token": 6,
+        "oauth2": 3,
+        "api_key": 7,
+        "personal_access_token": 2,
+        "service_account": 1,
+        "not_applicable": 1,
+        "oauth2_pkce": 1
+      },
+      "official_mcp": 7,
+      "product_action_mcp": 5,
+      "composio_toolkit": 4
+    }
+  },
+  "validation": {
+    "error_count": 0,
+    "raw_error_count": 4,
+    "intentional_error_count": 4,
+    "warning_count": 2,
+    "errors": [
+      {
+        "code": "open_distribution_without_evidence",
+        "message": "Open multi-customer distribution requires evidence about public/distributable integration setup.",
+        "field": "distributed_integration_access",
+        "severity": "error"
+      },
+      {
+        "code": "app_review_without_evidence",
+        "message": "App-review distribution requires evidence of review, approval, production gating, or public-app review.",
+        "field": "distributed_integration_access",
+        "severity": "error"
+      },
+      {
+        "code": "app_review_without_evidence",
+        "message": "App-review distribution requires evidence of review, approval, production gating, or public-app review.",
+        "field": "distributed_integration_access",
+        "severity": "error"
+      },
+      {
+        "code": "identity_hint_conflict",
+        "message": "A name-matching candidate conflicts with the assignment hint/context and cannot be accepted automatically.",
+        "field": "identity",
+        "severity": "error"
+      }
+    ],
+    "warnings": [
+      {
+        "code": "identity_requires_escalation",
+        "message": "Identity uncertainty requires human or deeper research review.",
+        "field": "identity",
+        "severity": "warning"
+      },
+      {
+        "code": "identity_requires_escalation",
+        "message": "Identity hint conflict requires deeper research or human review.",
+        "field": "identity",
+        "severity": "warning"
+      }
+    ]
+  },
+  "verification": {
+    "challenge_count": 800,
+    "status_distribution": {
+      "agree": 608,
+      "correction": 85,
+      "disagree": 48,
+      "unverifiable": 59
+    },
+    "observed_agreement": {
+      "numerator": 608,
+      "denominator": 741,
+      "rate": 0.8205128205128205,
+      "note": "Verifier agreement is not accuracy."
+    },
+    "source_disjoint_count": 767,
+    "source_disjoint_rate": 0.95875,
+    "alternate_source_available_count": 767,
+    "source_disjoint_when_alternate_available": {
+      "numerator": 767,
+      "denominator": 767,
+      "rate": 1
+    },
+    "note": "The verifier challenged proposals and preserved disagreements; it did not provide ground truth."
+  },
+  "consistency_sweeps": {
+    "mcp_lifecycle_changes": 12,
+    "enterprise_commercial_changes": 16
+  },
+  "holdout": {
+    "schema_version": "2026-08-28.full-run.v2",
+    "holdout_apps": [
+      "Grain",
+      "Devin",
+      "BigCommerce",
+      "Squarespace",
+      "Vonage",
+      "Aircall",
+      "Twenty",
+      "Podio",
+      "Gladly",
+      "Gorgias",
+      "Ahrefs",
+      "Bright Data",
+      "Cloudflare",
+      "Neo4j",
+      "Xero",
+      "Binance",
+      "LinkedIn Ads",
+      "Pinterest",
+      "Airtable",
+      "Harvest",
+      "Ramp",
+      "SE Ranking",
+      "Clay",
+      "Reducto",
+      "Supabase",
+      "Pylon",
+      "Datadog",
+      "Attio",
+      "Amazon Selling Partner",
+      "Close"
+    ],
+    "reviewed_app_count": 30,
+    "reviewed_field_count": 450,
+    "fields": [
+      "identity",
+      "auth_methods",
+      "customer_credential_access",
+      "distributed_integration_access",
+      "sandbox_access",
+      "public_api_available",
+      "api_breadth",
+      "vendor_official_mcp",
+      "vendor_mcp_type",
+      "vendor_mcp_stage",
+      "technical_buildability",
+      "commercial_friction",
+      "setup_friction",
+      "main_blocker",
+      "composio_toolkit_exists"
+    ],
+    "counts": {
+      "exact_matches": 413,
+      "correct": 351,
+      "wrong": 24,
+      "partial": 0,
+      "human_unresolved": 70,
+      "automation_abstentions": 5,
+      "changed": 37
+    },
+    "exact_field_agreement": {
+      "numerator": 413,
+      "denominator": 450,
+      "rate": 0.9177777777777778,
+      "definition": "Exact equality across all human-adjudicable fields; approved unknown values are included in this agreement denominator."
+    },
+    "resolved_field_accuracy": {
+      "numerator": 351,
+      "denominator": 375,
+      "rate": 0.936,
+      "definition": "correct / (correct + wrong); partial disagreements are included in wrong, while automation abstentions and human-unresolved fields are excluded."
+    },
+    "automation_abstention_rate": {
+      "numerator": 5,
+      "denominator": 450,
+      "rate": 0.011111111111111112,
+      "definition": "Pre-human proposal was unknown."
+    },
+    "human_unresolved_rate": {
+      "numerator": 70,
+      "denominator": 450,
+      "rate": 0.15555555555555556,
+      "definition": "Approved value remains unknown."
+    },
+    "field_breakdown": {
+      "identity": {
+        "changed": 0,
+        "exact_matches": 30,
+        "correct": 30,
+        "wrong": 0,
+        "partial": 0,
+        "human_unresolved": 0,
+        "automation_abstentions": 0
+      },
+      "auth_methods": {
+        "changed": 0,
+        "exact_matches": 30,
+        "correct": 30,
+        "wrong": 0,
+        "partial": 0,
+        "human_unresolved": 0,
+        "automation_abstentions": 0
+      },
+      "customer_credential_access": {
+        "changed": 8,
+        "exact_matches": 22,
+        "correct": 21,
+        "wrong": 6,
+        "partial": 0,
+        "human_unresolved": 1,
+        "automation_abstentions": 2
+      },
+      "distributed_integration_access": {
+        "changed": 8,
+        "exact_matches": 22,
+        "correct": 19,
+        "wrong": 8,
+        "partial": 0,
+        "human_unresolved": 3,
+        "automation_abstentions": 0
+      },
+      "sandbox_access": {
+        "changed": 1,
+        "exact_matches": 29,
+        "correct": 10,
+        "wrong": 1,
+        "partial": 0,
+        "human_unresolved": 19,
+        "automation_abstentions": 0
+      },
+      "public_api_available": {
+        "changed": 1,
+        "exact_matches": 29,
+        "correct": 29,
+        "wrong": 1,
+        "partial": 0,
+        "human_unresolved": 0,
+        "automation_abstentions": 0
+      },
+      "api_breadth": {
+        "changed": 1,
+        "exact_matches": 29,
+        "correct": 29,
+        "wrong": 1,
+        "partial": 0,
+        "human_unresolved": 0,
+        "automation_abstentions": 0
+      },
+      "vendor_official_mcp": {
+        "changed": 1,
+        "exact_matches": 29,
+        "correct": 21,
+        "wrong": 0,
+        "partial": 0,
+        "human_unresolved": 8,
+        "automation_abstentions": 1
+      },
+      "vendor_mcp_type": {
+        "changed": 2,
+        "exact_matches": 28,
+        "correct": 20,
+        "wrong": 1,
+        "partial": 0,
+        "human_unresolved": 8,
+        "automation_abstentions": 1
+      },
+      "vendor_mcp_stage": {
+        "changed": 8,
+        "exact_matches": 22,
+        "correct": 0,
+        "wrong": 0,
+        "partial": 0,
+        "human_unresolved": 29,
+        "automation_abstentions": 1
+      },
+      "technical_buildability": {
+        "changed": 0,
+        "exact_matches": 30,
+        "correct": 30,
+        "wrong": 0,
+        "partial": 0,
+        "human_unresolved": 0,
+        "automation_abstentions": 0
+      },
+      "commercial_friction": {
+        "changed": 6,
+        "exact_matches": 24,
+        "correct": 23,
+        "wrong": 5,
+        "partial": 0,
+        "human_unresolved": 2,
+        "automation_abstentions": 0
+      },
+      "setup_friction": {
+        "changed": 1,
+        "exact_matches": 29,
+        "correct": 29,
+        "wrong": 1,
+        "partial": 0,
+        "human_unresolved": 0,
+        "automation_abstentions": 0
+      },
+      "main_blocker": {
+        "changed": 0,
+        "exact_matches": 30,
+        "correct": 30,
+        "wrong": 0,
+        "partial": 0,
+        "human_unresolved": 0,
+        "automation_abstentions": 0
+      },
+      "composio_toolkit_exists": {
+        "changed": 0,
+        "exact_matches": 30,
+        "correct": 30,
+        "wrong": 0,
+        "partial": 0,
+        "human_unresolved": 0,
+        "automation_abstentions": 0
+      }
+    },
+    "category_breakdown": {
+      "crm_sales": {
+        "reviewed_fields": 60,
+        "changed": 4,
+        "exact_matches": 56,
+        "wrong_or_partial": 4
+      },
+      "customer_support": {
+        "reviewed_fields": 45,
+        "changed": 5,
+        "exact_matches": 40,
+        "wrong_or_partial": 1
+      },
+      "communication": {
+        "reviewed_fields": 30,
+        "changed": 0,
+        "exact_matches": 30,
+        "wrong_or_partial": 0
+      },
+      "marketing_analytics": {
+        "reviewed_fields": 30,
+        "changed": 2,
+        "exact_matches": 28,
+        "wrong_or_partial": 2
+      },
+      "commerce": {
+        "reviewed_fields": 45,
+        "changed": 2,
+        "exact_matches": 43,
+        "wrong_or_partial": 1
+      },
+      "data_seo_scraping": {
+        "reviewed_fields": 60,
+        "changed": 5,
+        "exact_matches": 55,
+        "wrong_or_partial": 3
+      },
+      "developer_tools": {
+        "reviewed_fields": 60,
+        "changed": 4,
+        "exact_matches": 56,
+        "wrong_or_partial": 2
+      },
+      "productivity": {
+        "reviewed_fields": 30,
+        "changed": 4,
+        "exact_matches": 26,
+        "wrong_or_partial": 3
+      },
+      "finance_payments": {
+        "reviewed_fields": 45,
+        "changed": 2,
+        "exact_matches": 43,
+        "wrong_or_partial": 1
+      },
+      "ai_media": {
+        "reviewed_fields": 45,
+        "changed": 9,
+        "exact_matches": 36,
+        "wrong_or_partial": 7
+      }
+    },
+    "comparison_rows": [
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2_pkce",
+          "oauth2",
+          "personal_access_token",
+          "bearer_token"
+        ],
+        "approved_value": [
+          "oauth2_pkce",
+          "oauth2",
+          "personal_access_token",
+          "bearer_token"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "customer_credential_access",
+        "proposed_value": "vendor_approval_required",
+        "approved_value": "self_serve_paid",
+        "status": "wrong"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "distributed_integration_access",
+        "proposed_value": "open_self_serve",
+        "approved_value": "vendor_approval_required",
+        "status": "wrong"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "sandbox_access",
+        "proposed_value": "admin_required",
+        "approved_value": "unavailable",
+        "status": "wrong"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "public_api_available",
+        "proposed_value": "limited",
+        "approved_value": "yes",
+        "status": "wrong"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "api_breadth",
+        "proposed_value": "action_specific",
+        "approved_value": "moderate",
+        "status": "wrong"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "beta",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "commercial_friction",
+        "proposed_value": "enterprise_plan_required",
+        "approved_value": "paid_plan_required",
+        "status": "wrong"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Grain",
+        "category": "ai_media",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "auth_methods",
+        "proposed_value": [
+          "personal_access_token",
+          "api_key",
+          "bearer_token",
+          "service_account"
+        ],
+        "approved_value": [
+          "personal_access_token",
+          "api_key",
+          "bearer_token",
+          "service_account"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "distributed_integration_access",
+        "proposed_value": "customer_managed_only",
+        "approved_value": "customer_managed_only",
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "deprecated",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "commercial_friction",
+        "proposed_value": "enterprise_plan_required",
+        "approved_value": "enterprise_plan_required",
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "setup_friction",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Devin",
+        "category": "ai_media",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "auth_methods",
+        "proposed_value": [
+          "personal_access_token",
+          "bearer_token",
+          "jwt",
+          "basic_auth"
+        ],
+        "approved_value": [
+          "personal_access_token",
+          "bearer_token",
+          "jwt",
+          "basic_auth"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "distributed_integration_access",
+        "proposed_value": "customer_managed_only",
+        "approved_value": "app_review_required",
+        "status": "wrong"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "sandbox_access",
+        "proposed_value": "admin_required",
+        "approved_value": "admin_required",
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "vendor_mcp_type",
+        "proposed_value": "documentation",
+        "approved_value": "documentation",
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "deprecated",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "commercial_friction",
+        "proposed_value": "free_tier_limited",
+        "approved_value": "free_tier_limited",
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "BigCommerce",
+        "category": "commerce",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token"
+        ],
+        "approved_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "distributed_integration_access",
+        "proposed_value": "app_review_required",
+        "approved_value": "app_review_required",
+        "status": "correct"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "sandbox_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "api_breadth",
+        "proposed_value": "action_specific",
+        "approved_value": "action_specific",
+        "status": "correct"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "vendor_official_mcp",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "vendor_mcp_type",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "commercial_friction",
+        "proposed_value": "free_tier_limited",
+        "approved_value": "free_tier_limited",
+        "status": "correct"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Squarespace",
+        "category": "commerce",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "auth_methods",
+        "proposed_value": [
+          "api_key",
+          "jwt",
+          "basic_auth"
+        ],
+        "approved_value": [
+          "api_key",
+          "jwt",
+          "basic_auth"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "distributed_integration_access",
+        "proposed_value": "customer_managed_only",
+        "approved_value": "customer_managed_only",
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "vendor_mcp_type",
+        "proposed_value": "documentation",
+        "approved_value": "documentation",
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "commercial_friction",
+        "proposed_value": "free_tier_limited",
+        "approved_value": "free_tier_limited",
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "setup_friction",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Vonage",
+        "category": "communication",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token",
+          "basic_auth"
+        ],
+        "approved_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token",
+          "basic_auth"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "distributed_integration_access",
+        "proposed_value": "partner_program_required",
+        "approved_value": "partner_program_required",
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "sandbox_access",
+        "proposed_value": "partner_gated",
+        "approved_value": "partner_gated",
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "commercial_friction",
+        "proposed_value": "usage_pricing",
+        "approved_value": "usage_pricing",
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Aircall",
+        "category": "communication",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "auth_methods",
+        "proposed_value": [
+          "api_key",
+          "bearer_token"
+        ],
+        "approved_value": [
+          "api_key",
+          "bearer_token"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "distributed_integration_access",
+        "proposed_value": "open_self_serve",
+        "approved_value": "open_self_serve",
+        "status": "correct"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "vendor_mcp_type",
+        "proposed_value": "mixed",
+        "approved_value": "product_action",
+        "status": "wrong"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "commercial_friction",
+        "proposed_value": "usage_pricing",
+        "approved_value": "usage_pricing",
+        "status": "correct"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Twenty",
+        "category": "crm_sales",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "api_key"
+        ],
+        "approved_value": [
+          "oauth2",
+          "api_key"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "distributed_integration_access",
+        "proposed_value": "customer_managed_only",
+        "approved_value": "open_self_serve",
+        "status": "wrong"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "api_breadth",
+        "proposed_value": "action_specific",
+        "approved_value": "action_specific",
+        "status": "correct"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "vendor_official_mcp",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "vendor_mcp_type",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "commercial_friction",
+        "proposed_value": "free_tier_limited",
+        "approved_value": "free_tier_limited",
+        "status": "correct"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Podio",
+        "category": "crm_sales",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "auth_methods",
+        "proposed_value": [
+          "jwt",
+          "basic_auth"
+        ],
+        "approved_value": [
+          "jwt",
+          "basic_auth"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "customer_credential_access",
+        "proposed_value": "unknown",
+        "approved_value": "admin_required",
+        "status": "automation_abstention"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "distributed_integration_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "sandbox_access",
+        "proposed_value": "approval_required",
+        "approved_value": "approval_required",
+        "status": "correct"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "vendor_official_mcp",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "vendor_mcp_type",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "commercial_friction",
+        "proposed_value": "usage_pricing",
+        "approved_value": "usage_pricing",
+        "status": "correct"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "setup_friction",
+        "proposed_value": "admin_configuration",
+        "approved_value": "admin_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Gladly",
+        "category": "customer_support",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2_pkce",
+          "oauth2",
+          "api_key",
+          "bearer_token",
+          "basic_auth"
+        ],
+        "approved_value": [
+          "oauth2_pkce",
+          "oauth2",
+          "api_key",
+          "bearer_token",
+          "basic_auth"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "admin_required",
+        "status": "wrong"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "distributed_integration_access",
+        "proposed_value": "app_review_required",
+        "approved_value": "app_review_required",
+        "status": "correct"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "sandbox_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "vendor_official_mcp",
+        "proposed_value": "unknown",
+        "approved_value": true,
+        "status": "automation_abstention"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "vendor_mcp_type",
+        "proposed_value": "unknown",
+        "approved_value": "product_action",
+        "status": "automation_abstention"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "beta",
+        "status": "automation_abstention"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "commercial_friction",
+        "proposed_value": "paid_plan_required",
+        "approved_value": "paid_plan_required",
+        "status": "correct"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Gorgias",
+        "category": "customer_support",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token"
+        ],
+        "approved_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "admin_required",
+        "status": "wrong"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "distributed_integration_access",
+        "proposed_value": "app_review_required",
+        "approved_value": "app_review_required",
+        "status": "correct"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "deprecated",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "commercial_friction",
+        "proposed_value": "enterprise_plan_required",
+        "approved_value": "enterprise_plan_required",
+        "status": "correct"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Ahrefs",
+        "category": "data_seo_scraping",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "auth_methods",
+        "proposed_value": [
+          "api_key",
+          "bearer_token"
+        ],
+        "approved_value": [
+          "api_key",
+          "bearer_token"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "distributed_integration_access",
+        "proposed_value": "customer_managed_only",
+        "approved_value": "customer_managed_only",
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "api_breadth",
+        "proposed_value": "action_specific",
+        "approved_value": "action_specific",
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "commercial_friction",
+        "proposed_value": "usage_pricing",
+        "approved_value": "usage_pricing",
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "setup_friction",
+        "proposed_value": "admin_configuration",
+        "approved_value": "admin_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Bright Data",
+        "category": "data_seo_scraping",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token"
+        ],
+        "approved_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "distributed_integration_access",
+        "proposed_value": "customer_managed_only",
+        "approved_value": "customer_managed_only",
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "sandbox_access",
+        "proposed_value": "approval_required",
+        "approved_value": "approval_required",
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "vendor_mcp_type",
+        "proposed_value": "mixed",
+        "approved_value": "mixed",
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "beta",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "commercial_friction",
+        "proposed_value": "usage_pricing",
+        "approved_value": "usage_pricing",
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "setup_friction",
+        "proposed_value": "admin_configuration",
+        "approved_value": "admin_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Cloudflare",
+        "category": "developer_tools",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "bearer_token",
+          "jwt",
+          "basic_auth"
+        ],
+        "approved_value": [
+          "oauth2",
+          "bearer_token",
+          "jwt",
+          "basic_auth"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "distributed_integration_access",
+        "proposed_value": "customer_managed_only",
+        "approved_value": "customer_managed_only",
+        "status": "correct"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "commercial_friction",
+        "proposed_value": "enterprise_plan_required",
+        "approved_value": "free_tier_limited",
+        "status": "wrong"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "setup_friction",
+        "proposed_value": "admin_configuration",
+        "approved_value": "admin_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Neo4j",
+        "category": "developer_tools",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2_pkce",
+          "oauth2",
+          "bearer_token",
+          "jwt"
+        ],
+        "approved_value": [
+          "oauth2_pkce",
+          "oauth2",
+          "bearer_token",
+          "jwt"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "customer_credential_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "distributed_integration_access",
+        "proposed_value": "partner_program_required",
+        "approved_value": "partner_program_required",
+        "status": "correct"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "announced",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "commercial_friction",
+        "proposed_value": "free_tier_limited",
+        "approved_value": "free_tier_limited",
+        "status": "correct"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Xero",
+        "category": "finance_payments",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "auth_methods",
+        "proposed_value": [
+          "api_key"
+        ],
+        "approved_value": [
+          "api_key"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "distributed_integration_access",
+        "proposed_value": "app_review_required",
+        "approved_value": "app_review_required",
+        "status": "correct"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "sandbox_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "vendor_official_mcp",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "vendor_mcp_type",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "commercial_friction",
+        "proposed_value": "free_tier_limited",
+        "approved_value": "free_tier_limited",
+        "status": "correct"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Binance",
+        "category": "finance_payments",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token"
+        ],
+        "approved_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "vendor_approval_required",
+        "status": "wrong"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "distributed_integration_access",
+        "proposed_value": "app_review_required",
+        "approved_value": "app_review_required",
+        "status": "correct"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "vendor_official_mcp",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "vendor_mcp_type",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "commercial_friction",
+        "proposed_value": "free_tier_limited",
+        "approved_value": "free_tier_limited",
+        "status": "correct"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "setup_friction",
+        "proposed_value": "app_review",
+        "approved_value": "app_review",
+        "status": "correct"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "LinkedIn Ads",
+        "category": "marketing_analytics",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "bearer_token"
+        ],
+        "approved_value": [
+          "oauth2",
+          "bearer_token"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "vendor_approval_required",
+        "status": "wrong"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "distributed_integration_access",
+        "proposed_value": "app_review_required",
+        "approved_value": "app_review_required",
+        "status": "correct"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "sandbox_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "vendor_official_mcp",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "vendor_mcp_type",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "commercial_friction",
+        "proposed_value": "free_tier_limited",
+        "approved_value": "free_tier_limited",
+        "status": "correct"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Pinterest",
+        "category": "marketing_analytics",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2_pkce",
+          "oauth2",
+          "personal_access_token",
+          "api_key",
+          "bearer_token",
+          "service_account"
+        ],
+        "approved_value": [
+          "oauth2_pkce",
+          "oauth2",
+          "personal_access_token",
+          "api_key",
+          "bearer_token",
+          "service_account"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "distributed_integration_access",
+        "proposed_value": "customer_managed_only",
+        "approved_value": "open_self_serve",
+        "status": "wrong"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "commercial_friction",
+        "proposed_value": "enterprise_plan_required",
+        "approved_value": "enterprise_plan_required",
+        "status": "correct"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "setup_friction",
+        "proposed_value": "admin_configuration",
+        "approved_value": "admin_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Airtable",
+        "category": "productivity",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "personal_access_token",
+          "bearer_token",
+          "basic_auth"
+        ],
+        "approved_value": [
+          "oauth2",
+          "personal_access_token",
+          "bearer_token",
+          "basic_auth"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "distributed_integration_access",
+        "proposed_value": "customer_managed_only",
+        "approved_value": "open_self_serve",
+        "status": "wrong"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "vendor_official_mcp",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "vendor_mcp_type",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "commercial_friction",
+        "proposed_value": "enterprise_plan_required",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "setup_friction",
+        "proposed_value": "app_review",
+        "approved_value": "oauth_configuration",
+        "status": "wrong"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Harvest",
+        "category": "productivity",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token",
+          "basic_auth"
+        ],
+        "approved_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token",
+          "basic_auth"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "admin_required",
+        "status": "wrong"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "distributed_integration_access",
+        "proposed_value": "vendor_approval_required",
+        "approved_value": "vendor_approval_required",
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "sandbox_access",
+        "proposed_value": "admin_required",
+        "approved_value": "admin_required",
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "commercial_friction",
+        "proposed_value": "usage_pricing",
+        "approved_value": "usage_pricing",
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "setup_friction",
+        "proposed_value": "admin_configuration",
+        "approved_value": "admin_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Ramp",
+        "category": "finance_payments",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token"
+        ],
+        "approved_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_trial",
+        "approved_value": "self_serve_trial",
+        "status": "correct"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "distributed_integration_access",
+        "proposed_value": "open_self_serve",
+        "approved_value": "open_self_serve",
+        "status": "correct"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "api_breadth",
+        "proposed_value": "action_specific",
+        "approved_value": "action_specific",
+        "status": "correct"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "vendor_mcp_type",
+        "proposed_value": "mixed",
+        "approved_value": "mixed",
+        "status": "correct"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "commercial_friction",
+        "proposed_value": "enterprise_plan_required",
+        "approved_value": "usage_pricing",
+        "status": "wrong"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "setup_friction",
+        "proposed_value": "admin_configuration",
+        "approved_value": "admin_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "SE Ranking",
+        "category": "data_seo_scraping",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "auth_methods",
+        "proposed_value": [
+          "api_key"
+        ],
+        "approved_value": [
+          "api_key"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "distributed_integration_access",
+        "proposed_value": "customer_managed_only",
+        "approved_value": "open_self_serve",
+        "status": "wrong"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "beta",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "commercial_friction",
+        "proposed_value": "enterprise_plan_required",
+        "approved_value": "enterprise_plan_required",
+        "status": "correct"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Clay",
+        "category": "data_seo_scraping",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "auth_methods",
+        "proposed_value": [
+          "api_key",
+          "bearer_token"
+        ],
+        "approved_value": [
+          "api_key",
+          "bearer_token"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "distributed_integration_access",
+        "proposed_value": "customer_managed_only",
+        "approved_value": "customer_managed_only",
+        "status": "correct"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "commercial_friction",
+        "proposed_value": "enterprise_plan_required",
+        "approved_value": "usage_pricing",
+        "status": "wrong"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Reducto",
+        "category": "ai_media",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "personal_access_token",
+          "api_key",
+          "bearer_token",
+          "jwt"
+        ],
+        "approved_value": [
+          "oauth2",
+          "personal_access_token",
+          "api_key",
+          "bearer_token",
+          "jwt"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "distributed_integration_access",
+        "proposed_value": "open_self_serve",
+        "approved_value": "open_self_serve",
+        "status": "correct"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "commercial_friction",
+        "proposed_value": "enterprise_plan_required",
+        "approved_value": "free_tier_limited",
+        "status": "wrong"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Supabase",
+        "category": "developer_tools",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "bearer_token"
+        ],
+        "approved_value": [
+          "oauth2",
+          "bearer_token"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "customer_credential_access",
+        "proposed_value": "admin_required",
+        "approved_value": "admin_required",
+        "status": "correct"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "distributed_integration_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "api_breadth",
+        "proposed_value": "action_specific",
+        "approved_value": "action_specific",
+        "status": "correct"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "commercial_friction",
+        "proposed_value": "free_tier_limited",
+        "approved_value": "free_tier_limited",
+        "status": "correct"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Pylon",
+        "category": "customer_support",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token",
+          "basic_auth"
+        ],
+        "approved_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token",
+          "basic_auth"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "customer_credential_access",
+        "proposed_value": "unknown",
+        "approved_value": "admin_required",
+        "status": "automation_abstention"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "distributed_integration_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "commercial_friction",
+        "proposed_value": "enterprise_plan_required",
+        "approved_value": "enterprise_plan_required",
+        "status": "correct"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "setup_friction",
+        "proposed_value": "admin_configuration",
+        "approved_value": "admin_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Datadog",
+        "category": "developer_tools",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token",
+          "basic_auth"
+        ],
+        "approved_value": [
+          "oauth2",
+          "api_key",
+          "bearer_token",
+          "basic_auth"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "distributed_integration_access",
+        "proposed_value": "customer_managed_only",
+        "approved_value": "open_self_serve",
+        "status": "wrong"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "commercial_friction",
+        "proposed_value": "usage_pricing",
+        "approved_value": "usage_pricing",
+        "status": "correct"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "setup_friction",
+        "proposed_value": "oauth_configuration",
+        "approved_value": "oauth_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Attio",
+        "category": "crm_sales",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2"
+        ],
+        "approved_value": [
+          "oauth2"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "customer_credential_access",
+        "proposed_value": "vendor_approval_required",
+        "approved_value": "vendor_approval_required",
+        "status": "correct"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "distributed_integration_access",
+        "proposed_value": "app_review_required",
+        "approved_value": "app_review_required",
+        "status": "correct"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "sandbox_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "api_breadth",
+        "proposed_value": "action_specific",
+        "approved_value": "action_specific",
+        "status": "correct"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "vendor_official_mcp",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "vendor_mcp_type",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "commercial_friction",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "setup_friction",
+        "proposed_value": "admin_configuration",
+        "approved_value": "admin_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "category": "commerce",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "no",
+        "approved_value": "no",
+        "status": "correct"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "identity",
+        "proposed_value": "confirmed",
+        "approved_value": "confirmed",
+        "status": "correct"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "auth_methods",
+        "proposed_value": [
+          "oauth2_client_credentials",
+          "oauth2",
+          "api_key",
+          "basic_auth"
+        ],
+        "approved_value": [
+          "oauth2_client_credentials",
+          "oauth2",
+          "api_key",
+          "basic_auth"
+        ],
+        "status": "correct"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "customer_credential_access",
+        "proposed_value": "self_serve_free",
+        "approved_value": "self_serve_free",
+        "status": "correct"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "distributed_integration_access",
+        "proposed_value": "open_self_serve",
+        "approved_value": "app_review_required",
+        "status": "wrong"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "sandbox_access",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "public_api_available",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "api_breadth",
+        "proposed_value": "broad",
+        "approved_value": "broad",
+        "status": "correct"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "vendor_official_mcp",
+        "proposed_value": true,
+        "approved_value": true,
+        "status": "correct"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "vendor_mcp_type",
+        "proposed_value": "product_action",
+        "approved_value": "product_action",
+        "status": "correct"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "vendor_mcp_stage",
+        "proposed_value": "unknown",
+        "approved_value": "unknown",
+        "status": "human_unresolved"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "technical_buildability",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "commercial_friction",
+        "proposed_value": "usage_pricing",
+        "approved_value": "usage_pricing",
+        "status": "correct"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "setup_friction",
+        "proposed_value": "admin_configuration",
+        "approved_value": "admin_configuration",
+        "status": "correct"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "main_blocker",
+        "proposed_value": "none",
+        "approved_value": "none",
+        "status": "correct"
+      },
+      {
+        "app": "Close",
+        "category": "crm_sales",
+        "field": "composio_toolkit_exists",
+        "proposed_value": "yes",
+        "approved_value": "yes",
+        "status": "correct"
+      }
+    ],
+    "schema_repair_improvement": {
+      "comparison": "immutable packet before_schema_repair vs after_schema_repair, then approved final value",
+      "repaired_field_count": 86,
+      "accepted_v2_values": 71,
+      "still_needed_human_correction": 15,
+      "accepted_rate": 0.8255813953488372,
+      "denominator": 86,
+      "rows": [
+        {
+          "app": "Grain",
+          "field": "customer_credential_access",
+          "before": "self_serve_paid",
+          "after": "vendor_approval_required",
+          "approved": "self_serve_paid",
+          "accepted": false
+        },
+        {
+          "app": "Grain",
+          "field": "distributed_integration_access",
+          "before": "unknown",
+          "after": "open_self_serve",
+          "approved": "vendor_approval_required",
+          "accepted": false
+        },
+        {
+          "app": "Grain",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Grain",
+          "field": "technical_buildability",
+          "before": "limited",
+          "after": "yes",
+          "approved": "yes",
+          "accepted": true
+        },
+        {
+          "app": "Grain",
+          "field": "main_blocker",
+          "before": "interface_limited",
+          "after": "none",
+          "approved": "none",
+          "accepted": true
+        },
+        {
+          "app": "Devin",
+          "field": "distributed_integration_access",
+          "before": "unknown",
+          "after": "customer_managed_only",
+          "approved": "customer_managed_only",
+          "accepted": true
+        },
+        {
+          "app": "Devin",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "BigCommerce",
+          "field": "distributed_integration_access",
+          "before": "unknown",
+          "after": "customer_managed_only",
+          "approved": "app_review_required",
+          "accepted": false
+        },
+        {
+          "app": "BigCommerce",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "documentation",
+          "approved": "documentation",
+          "accepted": true
+        },
+        {
+          "app": "Squarespace",
+          "field": "distributed_integration_access",
+          "before": "self_serve_free",
+          "after": "app_review_required",
+          "approved": "app_review_required",
+          "accepted": true
+        },
+        {
+          "app": "Squarespace",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "unknown",
+          "approved": "unknown",
+          "accepted": true
+        },
+        {
+          "app": "Squarespace",
+          "field": "technical_buildability",
+          "before": "limited",
+          "after": "yes",
+          "approved": "yes",
+          "accepted": true
+        },
+        {
+          "app": "Squarespace",
+          "field": "main_blocker",
+          "before": "interface_limited",
+          "after": "none",
+          "approved": "none",
+          "accepted": true
+        },
+        {
+          "app": "Vonage",
+          "field": "distributed_integration_access",
+          "before": "self_serve_free",
+          "after": "customer_managed_only",
+          "approved": "customer_managed_only",
+          "accepted": true
+        },
+        {
+          "app": "Vonage",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "documentation",
+          "approved": "documentation",
+          "accepted": true
+        },
+        {
+          "app": "Aircall",
+          "field": "distributed_integration_access",
+          "before": "self_serve_free",
+          "after": "partner_program_required",
+          "approved": "partner_program_required",
+          "accepted": true
+        },
+        {
+          "app": "Aircall",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Twenty",
+          "field": "distributed_integration_access",
+          "before": "unknown",
+          "after": "open_self_serve",
+          "approved": "open_self_serve",
+          "accepted": true
+        },
+        {
+          "app": "Twenty",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "mixed",
+          "approved": "product_action",
+          "accepted": false
+        },
+        {
+          "app": "Podio",
+          "field": "distributed_integration_access",
+          "before": "unknown",
+          "after": "customer_managed_only",
+          "approved": "open_self_serve",
+          "accepted": false
+        },
+        {
+          "app": "Podio",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "unknown",
+          "approved": "unknown",
+          "accepted": true
+        },
+        {
+          "app": "Podio",
+          "field": "technical_buildability",
+          "before": "limited",
+          "after": "yes",
+          "approved": "yes",
+          "accepted": true
+        },
+        {
+          "app": "Podio",
+          "field": "main_blocker",
+          "before": "interface_limited",
+          "after": "none",
+          "approved": "none",
+          "accepted": true
+        },
+        {
+          "app": "Gladly",
+          "field": "customer_credential_access",
+          "before": "self_serve_free",
+          "after": "unknown",
+          "approved": "admin_required",
+          "accepted": false
+        },
+        {
+          "app": "Gladly",
+          "field": "distributed_integration_access",
+          "before": "self_serve_free",
+          "after": "unknown",
+          "approved": "unknown",
+          "accepted": true
+        },
+        {
+          "app": "Gladly",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "unknown",
+          "approved": "unknown",
+          "accepted": true
+        },
+        {
+          "app": "Gorgias",
+          "field": "customer_credential_access",
+          "before": "self_serve_paid",
+          "after": "self_serve_free",
+          "approved": "admin_required",
+          "accepted": false
+        },
+        {
+          "app": "Gorgias",
+          "field": "distributed_integration_access",
+          "before": "unknown",
+          "after": "app_review_required",
+          "approved": "app_review_required",
+          "accepted": true
+        },
+        {
+          "app": "Gorgias",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "unknown",
+          "approved": "product_action",
+          "accepted": false
+        },
+        {
+          "app": "Ahrefs",
+          "field": "customer_credential_access",
+          "before": "self_serve_paid",
+          "after": "self_serve_free",
+          "approved": "admin_required",
+          "accepted": false
+        },
+        {
+          "app": "Ahrefs",
+          "field": "distributed_integration_access",
+          "before": "self_serve_paid",
+          "after": "app_review_required",
+          "approved": "app_review_required",
+          "accepted": true
+        },
+        {
+          "app": "Ahrefs",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Bright Data",
+          "field": "distributed_integration_access",
+          "before": "self_serve_free",
+          "after": "customer_managed_only",
+          "approved": "customer_managed_only",
+          "accepted": true
+        },
+        {
+          "app": "Bright Data",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Bright Data",
+          "field": "technical_buildability",
+          "before": "limited",
+          "after": "yes",
+          "approved": "yes",
+          "accepted": true
+        },
+        {
+          "app": "Bright Data",
+          "field": "main_blocker",
+          "before": "interface_limited",
+          "after": "none",
+          "approved": "none",
+          "accepted": true
+        },
+        {
+          "app": "Cloudflare",
+          "field": "distributed_integration_access",
+          "before": "self_serve_free",
+          "after": "customer_managed_only",
+          "approved": "customer_managed_only",
+          "accepted": true
+        },
+        {
+          "app": "Cloudflare",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "mixed",
+          "approved": "mixed",
+          "accepted": true
+        },
+        {
+          "app": "Neo4j",
+          "field": "customer_credential_access",
+          "before": "self_serve_paid",
+          "after": "self_serve_free",
+          "approved": "self_serve_free",
+          "accepted": true
+        },
+        {
+          "app": "Neo4j",
+          "field": "distributed_integration_access",
+          "before": "partner_gated",
+          "after": "customer_managed_only",
+          "approved": "customer_managed_only",
+          "accepted": true
+        },
+        {
+          "app": "Neo4j",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Xero",
+          "field": "customer_credential_access",
+          "before": "self_serve_free",
+          "after": "unknown",
+          "approved": "unknown",
+          "accepted": true
+        },
+        {
+          "app": "Xero",
+          "field": "distributed_integration_access",
+          "before": "unknown",
+          "after": "partner_program_required",
+          "approved": "partner_program_required",
+          "accepted": true
+        },
+        {
+          "app": "Xero",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Binance",
+          "field": "distributed_integration_access",
+          "before": "unknown",
+          "after": "app_review_required",
+          "approved": "app_review_required",
+          "accepted": true
+        },
+        {
+          "app": "Binance",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "unknown",
+          "approved": "unknown",
+          "accepted": true
+        },
+        {
+          "app": "LinkedIn Ads",
+          "field": "distributed_integration_access",
+          "before": "approval_required",
+          "after": "app_review_required",
+          "approved": "app_review_required",
+          "accepted": true
+        },
+        {
+          "app": "LinkedIn Ads",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "unknown",
+          "approved": "unknown",
+          "accepted": true
+        },
+        {
+          "app": "Pinterest",
+          "field": "distributed_integration_access",
+          "before": "approval_required",
+          "after": "app_review_required",
+          "approved": "app_review_required",
+          "accepted": true
+        },
+        {
+          "app": "Pinterest",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "unknown",
+          "approved": "unknown",
+          "accepted": true
+        },
+        {
+          "app": "Airtable",
+          "field": "distributed_integration_access",
+          "before": "admin_required",
+          "after": "customer_managed_only",
+          "approved": "open_self_serve",
+          "accepted": false
+        },
+        {
+          "app": "Airtable",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Harvest",
+          "field": "customer_credential_access",
+          "before": "self_serve_paid",
+          "after": "self_serve_free",
+          "approved": "self_serve_free",
+          "accepted": true
+        },
+        {
+          "app": "Harvest",
+          "field": "distributed_integration_access",
+          "before": "unknown",
+          "after": "customer_managed_only",
+          "approved": "open_self_serve",
+          "accepted": false
+        },
+        {
+          "app": "Harvest",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "unknown",
+          "approved": "unknown",
+          "accepted": true
+        },
+        {
+          "app": "Ramp",
+          "field": "distributed_integration_access",
+          "before": "admin_required",
+          "after": "vendor_approval_required",
+          "approved": "vendor_approval_required",
+          "accepted": true
+        },
+        {
+          "app": "Ramp",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "SE Ranking",
+          "field": "customer_credential_access",
+          "before": "self_serve_paid",
+          "after": "self_serve_trial",
+          "approved": "self_serve_trial",
+          "accepted": true
+        },
+        {
+          "app": "SE Ranking",
+          "field": "distributed_integration_access",
+          "before": "self_serve_trial",
+          "after": "open_self_serve",
+          "approved": "open_self_serve",
+          "accepted": true
+        },
+        {
+          "app": "SE Ranking",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "mixed",
+          "approved": "mixed",
+          "accepted": true
+        },
+        {
+          "app": "SE Ranking",
+          "field": "technical_buildability",
+          "before": "limited",
+          "after": "yes",
+          "approved": "yes",
+          "accepted": true
+        },
+        {
+          "app": "SE Ranking",
+          "field": "main_blocker",
+          "before": "interface_limited",
+          "after": "none",
+          "approved": "none",
+          "accepted": true
+        },
+        {
+          "app": "Clay",
+          "field": "customer_credential_access",
+          "before": "self_serve_paid",
+          "after": "self_serve_free",
+          "approved": "self_serve_free",
+          "accepted": true
+        },
+        {
+          "app": "Clay",
+          "field": "distributed_integration_access",
+          "before": "unknown",
+          "after": "customer_managed_only",
+          "approved": "open_self_serve",
+          "accepted": false
+        },
+        {
+          "app": "Clay",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Reducto",
+          "field": "distributed_integration_access",
+          "before": "self_serve_free",
+          "after": "customer_managed_only",
+          "approved": "customer_managed_only",
+          "accepted": true
+        },
+        {
+          "app": "Reducto",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Supabase",
+          "field": "customer_credential_access",
+          "before": "self_serve_paid",
+          "after": "self_serve_free",
+          "approved": "self_serve_free",
+          "accepted": true
+        },
+        {
+          "app": "Supabase",
+          "field": "distributed_integration_access",
+          "before": "partner_gated",
+          "after": "open_self_serve",
+          "approved": "open_self_serve",
+          "accepted": true
+        },
+        {
+          "app": "Supabase",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Pylon",
+          "field": "customer_credential_access",
+          "before": "self_serve_free",
+          "after": "admin_required",
+          "approved": "admin_required",
+          "accepted": true
+        },
+        {
+          "app": "Pylon",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Pylon",
+          "field": "technical_buildability",
+          "before": "limited",
+          "after": "yes",
+          "approved": "yes",
+          "accepted": true
+        },
+        {
+          "app": "Pylon",
+          "field": "main_blocker",
+          "before": "interface_limited",
+          "after": "none",
+          "approved": "none",
+          "accepted": true
+        },
+        {
+          "app": "Datadog",
+          "field": "customer_credential_access",
+          "before": "self_serve_free",
+          "after": "unknown",
+          "approved": "admin_required",
+          "accepted": false
+        },
+        {
+          "app": "Datadog",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Attio",
+          "field": "distributed_integration_access",
+          "before": "self_serve_free",
+          "after": "customer_managed_only",
+          "approved": "open_self_serve",
+          "accepted": false
+        },
+        {
+          "app": "Attio",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        },
+        {
+          "app": "Amazon Selling Partner",
+          "field": "auth_methods",
+          "before": [
+            "unknown"
+          ],
+          "after": [
+            "oauth2"
+          ],
+          "approved": [
+            "oauth2"
+          ],
+          "accepted": true
+        },
+        {
+          "app": "Amazon Selling Partner",
+          "field": "customer_credential_access",
+          "before": "self_serve_free",
+          "after": "vendor_approval_required",
+          "approved": "vendor_approval_required",
+          "accepted": true
+        },
+        {
+          "app": "Amazon Selling Partner",
+          "field": "distributed_integration_access",
+          "before": "self_serve_free",
+          "after": "app_review_required",
+          "approved": "app_review_required",
+          "accepted": true
+        },
+        {
+          "app": "Amazon Selling Partner",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "unknown",
+          "approved": "unknown",
+          "accepted": true
+        },
+        {
+          "app": "Amazon Selling Partner",
+          "field": "technical_buildability",
+          "before": "limited",
+          "after": "yes",
+          "approved": "yes",
+          "accepted": true
+        },
+        {
+          "app": "Amazon Selling Partner",
+          "field": "main_blocker",
+          "before": "interface_limited",
+          "after": "none",
+          "approved": "none",
+          "accepted": true
+        },
+        {
+          "app": "Close",
+          "field": "distributed_integration_access",
+          "before": "unknown",
+          "after": "open_self_serve",
+          "approved": "app_review_required",
+          "accepted": false
+        },
+        {
+          "app": "Close",
+          "field": "vendor_mcp_type",
+          "before": "not_present",
+          "after": "product_action",
+          "approved": "product_action",
+          "accepted": true
+        }
+      ]
+    },
+    "note": "This is a human-reviewed calibration result for the fixed 30-app holdout, not an estimate of accuracy across all 100 apps. Post-human values are adjudicated ground truth, not a model-accuracy measurement."
+  },
+  "runtime_seconds": 0.598,
+  "actual_paid_cost_usd": 0,
+  "paid_services_used": [],
+  "source_evidence_count": 2083
+}
