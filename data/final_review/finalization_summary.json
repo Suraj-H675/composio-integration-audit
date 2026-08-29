@@ -1,0 +1,17 @@
+{
+  "dataset_id": "2026-08-28.final.v2",
+  "schema_version": "2026-08-28.full-run.v2",
+  "finalized_at": "2026-08-28T17:10:07.691Z",
+  "migrated_apps": 100,
+  "new_network_fetches": 0,
+  "cache_files_indexed": 618,
+  "human_field_correction_count": 51,
+  "human_explicit_decision_count": 51,
+  "human_actual_value_change_count": 37,
+  "human_reaffirmed_value_count": 14,
+  "same_holdout": true,
+  "validation_errors": 0,
+  "validation_intentional_errors": 4,
+  "runtime_seconds": 0.598,
+  "paid_cost_usd": 0
+}

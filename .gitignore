@@ -24,5 +24,5 @@ coverage/
 
 # Non-runtime intermediate research artifacts
 data/full_run/
-data/final_review/
 data/calibration/
+data/final_review/*.md

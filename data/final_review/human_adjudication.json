@@ -1,0 +1,350 @@
+{
+  "review_status": "approved",
+  "reviewed_by": "project_author",
+  "reviewed_at": "2026-08-28T17:10:07.691Z",
+  "sample_size_apps": 30,
+  "sampling_method": "existing preregistered method",
+  "schema_version": "2026-08-28.full-run.v2",
+  "approved_default": "current_after_v2_proposal",
+  "holdout_apps": [
+    "Grain",
+    "Devin",
+    "BigCommerce",
+    "Squarespace",
+    "Vonage",
+    "Aircall",
+    "Twenty",
+    "Podio",
+    "Gladly",
+    "Gorgias",
+    "Ahrefs",
+    "Bright Data",
+    "Cloudflare",
+    "Neo4j",
+    "Xero",
+    "Binance",
+    "LinkedIn Ads",
+    "Pinterest",
+    "Airtable",
+    "Harvest",
+    "Ramp",
+    "SE Ranking",
+    "Clay",
+    "Reducto",
+    "Supabase",
+    "Pylon",
+    "Datadog",
+    "Attio",
+    "Amazon Selling Partner",
+    "Close"
+  ],
+  "explicit_field_corrections": [
+    {
+      "app": "Grain",
+      "field": "customer_credential_access",
+      "approved_value": "self_serve_paid",
+      "reason": "Customer PAT access is available on a paid plan; this is separate from OAuth distribution access."
+    },
+    {
+      "app": "Grain",
+      "field": "distributed_integration_access",
+      "approved_value": "vendor_approval_required",
+      "reason": "PAT/customer access and public OAuth distribution have different requirements."
+    },
+    {
+      "app": "Grain",
+      "field": "sandbox_access",
+      "approved_value": "unavailable",
+      "reason": "Grain explicitly documents that no sandbox is available."
+    },
+    {
+      "app": "Grain",
+      "field": "public_api_available",
+      "approved_value": "yes",
+      "reason": "The documented REST/API surface is useful beyond the MCP surface."
+    },
+    {
+      "app": "Grain",
+      "field": "api_breadth",
+      "approved_value": "moderate",
+      "reason": "The API covers meetings, recordings, transcripts and webhooks."
+    },
+    {
+      "app": "Grain",
+      "field": "vendor_mcp_stage",
+      "approved_value": "unknown",
+      "reason": "The cached evidence does not explicitly label the MCP lifecycle."
+    },
+    {
+      "app": "Grain",
+      "field": "technical_buildability",
+      "approved_value": "yes",
+      "reason": "The API and MCP provide a useful implementable interface."
+    },
+    {
+      "app": "Grain",
+      "field": "commercial_friction",
+      "approved_value": "paid_plan_required",
+      "reason": "API access is tied to a paid plan; pricing is not a technical blocker."
+    },
+    {
+      "app": "Grain",
+      "field": "main_blocker",
+      "approved_value": "none",
+      "reason": "No interface limitation blocks a useful toolkit."
+    },
+    {
+      "app": "Devin",
+      "field": "vendor_mcp_stage",
+      "approved_value": "unknown",
+      "reason": "A deprecated legacy transport/endpoint does not establish that the Devin MCP is deprecated."
+    },
+    {
+      "app": "BigCommerce",
+      "field": "distributed_integration_access",
+      "approved_value": "app_review_required",
+      "reason": "Public app distribution follows the vendor's app review process."
+    },
+    {
+      "app": "BigCommerce",
+      "field": "vendor_mcp_stage",
+      "approved_value": "unknown",
+      "reason": "A deprecated API/header statement is unrelated to MCP lifecycle."
+    },
+    {
+      "app": "Twenty",
+      "field": "vendor_mcp_type",
+      "approved_value": "product_action",
+      "reason": "The MCP operates actual CRM/workspace data and actions."
+    },
+    {
+      "app": "Podio",
+      "field": "distributed_integration_access",
+      "approved_value": "open_self_serve",
+      "reason": "The documented authorization path supports customer-facing distribution."
+    },
+    {
+      "app": "Podio",
+      "field": "technical_buildability",
+      "approved_value": "yes",
+      "reason": "The public API is technically sufficient for a useful toolkit."
+    },
+    {
+      "app": "Podio",
+      "field": "main_blocker",
+      "approved_value": "none",
+      "reason": "No interface limitation blocks a useful toolkit."
+    },
+    {
+      "app": "Gladly",
+      "field": "customer_credential_access",
+      "approved_value": "admin_required",
+      "reason": "Customer credentials require organization administrator setup."
+    },
+    {
+      "app": "Gladly",
+      "field": "distributed_integration_access",
+      "approved_value": "unknown",
+      "reason": "Cached evidence does not establish a public distribution gate."
+    },
+    {
+      "app": "Gladly",
+      "field": "technical_buildability",
+      "approved_value": "yes",
+      "reason": "The documented API is technically sufficient; access friction is separate."
+    },
+    {
+      "app": "Gorgias",
+      "field": "customer_credential_access",
+      "approved_value": "admin_required",
+      "reason": "An administrator must configure customer authorization."
+    },
+    {
+      "app": "Gorgias",
+      "field": "vendor_official_mcp",
+      "approved_value": true,
+      "reason": "The current first-party announcement describes a first-party MCP server."
+    },
+    {
+      "app": "Gorgias",
+      "field": "vendor_mcp_type",
+      "approved_value": "product_action",
+      "reason": "The official MCP operates on support/customer data and actions."
+    },
+    {
+      "app": "Gorgias",
+      "field": "vendor_mcp_stage",
+      "approved_value": "beta",
+      "reason": "The first-party announcement describes the server as open beta."
+    },
+    {
+      "app": "Gorgias",
+      "field": "technical_buildability",
+      "approved_value": "yes",
+      "reason": "The MCP/API surface is technically usable; plan and review friction are separate."
+    },
+    {
+      "app": "Ahrefs",
+      "field": "customer_credential_access",
+      "approved_value": "admin_required",
+      "reason": "An account administrator must configure access for the workspace."
+    },
+    {
+      "app": "Ahrefs",
+      "field": "vendor_mcp_stage",
+      "approved_value": "unknown",
+      "reason": "A legacy MCP transport deprecation does not deprecate the MCP service itself."
+    },
+    {
+      "app": "Cloudflare",
+      "field": "vendor_mcp_stage",
+      "approved_value": "unknown",
+      "reason": "A transport or unrelated API capability lifecycle does not establish MCP lifecycle."
+    },
+    {
+      "app": "Xero",
+      "field": "vendor_mcp_stage",
+      "approved_value": "unknown",
+      "reason": "An announcement or pricing statement does not establish an MCP lifecycle stage."
+    },
+    {
+      "app": "LinkedIn Ads",
+      "field": "customer_credential_access",
+      "approved_value": "vendor_approval_required",
+      "reason": "Customer advertising API access requires vendor approval."
+    },
+    {
+      "app": "LinkedIn Ads",
+      "field": "distributed_integration_access",
+      "approved_value": "app_review_required",
+      "reason": "Public distribution requires application review."
+    },
+    {
+      "app": "LinkedIn Ads",
+      "field": "technical_buildability",
+      "approved_value": "yes",
+      "reason": "The API is technically sufficient; access approval is a separate gate."
+    },
+    {
+      "app": "Pinterest",
+      "field": "customer_credential_access",
+      "approved_value": "vendor_approval_required",
+      "reason": "Customer API access requires vendor approval."
+    },
+    {
+      "app": "Pinterest",
+      "field": "distributed_integration_access",
+      "approved_value": "app_review_required",
+      "reason": "Public distribution requires application review."
+    },
+    {
+      "app": "Pinterest",
+      "field": "technical_buildability",
+      "approved_value": "yes",
+      "reason": "The API is technically sufficient; access approval is a separate gate."
+    },
+    {
+      "app": "Airtable",
+      "field": "distributed_integration_access",
+      "approved_value": "open_self_serve",
+      "reason": "The documented OAuth integration path is open for distributable integrations."
+    },
+    {
+      "app": "Harvest",
+      "field": "distributed_integration_access",
+      "approved_value": "open_self_serve",
+      "reason": "The documented OAuth path supports customer-facing distribution."
+    },
+    {
+      "app": "Harvest",
+      "field": "setup_friction",
+      "approved_value": "oauth_configuration",
+      "reason": "A distributable Harvest integration requires OAuth configuration."
+    },
+    {
+      "app": "Harvest",
+      "field": "commercial_friction",
+      "approved_value": "unknown",
+      "reason": "Cached evidence shows rate limits but does not establish a free-plan entitlement."
+    },
+    {
+      "app": "Harvest",
+      "field": "technical_buildability",
+      "approved_value": "yes",
+      "reason": "The REST API and webhooks are technically sufficient."
+    },
+    {
+      "app": "Ramp",
+      "field": "customer_credential_access",
+      "approved_value": "admin_required",
+      "reason": "An organization administrator must configure access."
+    },
+    {
+      "app": "Ramp",
+      "field": "distributed_integration_access",
+      "approved_value": "vendor_approval_required",
+      "reason": "Public distribution requires vendor approval."
+    },
+    {
+      "app": "Ramp",
+      "field": "technical_buildability",
+      "approved_value": "yes",
+      "reason": "The API is technically sufficient; approval is a distribution gate."
+    },
+    {
+      "app": "Clay",
+      "field": "distributed_integration_access",
+      "approved_value": "open_self_serve",
+      "reason": "The available customer authorization path does not document a partner gate."
+    },
+    {
+      "app": "Clay",
+      "field": "vendor_mcp_stage",
+      "approved_value": "unknown",
+      "reason": "The cached evidence does not explicitly label the MCP lifecycle."
+    },
+    {
+      "app": "Supabase",
+      "field": "commercial_friction",
+      "approved_value": "free_tier_limited",
+      "reason": "The free plan provides useful API access with usage limits."
+    },
+    {
+      "app": "Neo4j",
+      "field": "commercial_friction",
+      "approved_value": "free_tier_limited",
+      "reason": "Aura provides a free entry path with limits."
+    },
+    {
+      "app": "SE Ranking",
+      "field": "commercial_friction",
+      "approved_value": "usage_pricing",
+      "reason": "API access is governed by credits/usage rather than an enterprise-only requirement."
+    },
+    {
+      "app": "Reducto",
+      "field": "commercial_friction",
+      "approved_value": "usage_pricing",
+      "reason": "The API uses usage/credit-based pricing; this does not limit technical implementation."
+    },
+    {
+      "app": "Datadog",
+      "field": "customer_credential_access",
+      "approved_value": "admin_required",
+      "reason": "An organization administrator must configure access."
+    },
+    {
+      "app": "Attio",
+      "field": "distributed_integration_access",
+      "approved_value": "open_self_serve",
+      "reason": "The documented OAuth integration path supports public distribution."
+    },
+    {
+      "app": "Close",
+      "field": "distributed_integration_access",
+      "approved_value": "app_review_required",
+      "reason": "Public OAuth distribution requires app review."
+    }
+  ],
+  "notes": "The project author approved all current v2 holdout proposals except the explicit field corrections recorded here. Human decisions override automatic verifier proposals and cache-only consistency sweeps for the locked holdout."
+}

@@ -1,0 +1,538 @@
+{
+  "rule": "enterprise_commercial_friction",
+  "evaluated_count": 100,
+  "changed_count": 16,
+  "changes": [
+    {
+      "app": "Zendesk",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "source_type": "official_auth_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:50:25.726Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Front",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://dev.frontapp.com/docs/authentication",
+          "source_type": "official_auth_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:50:29.536Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Zoho Cliq",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:50:50.577Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "GoHighLevel",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "paid_plan_required",
+      "evidence": [
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:51:01.903Z",
+          "http_status": 200,
+          "statement": "The cached first-party source supports paid_plan_required: Differences Between API Access Across Plan Levels Basic API access is included with our Starter and Unlimited plans, while Advanced API access is available on our Agency Pro plan."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Klaviyo",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+          "source_type": "official_auth_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:51:06.919Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Gumroad",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://gumroad.com/api",
+          "source_type": "official_api_docs",
+          "retrieval_method": "browser",
+          "checked_at": "2026-08-28T09:51:43.502Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Apify",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "free_tier_limited",
+      "evidence": [
+        {
+          "url": "https://docs.apify.com/get-started/agent-onboarding",
+          "source_type": "official_product_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:51:49.984Z",
+          "http_status": 200,
+          "statement": "The cached first-party source supports free_tier_limited: The free plan includes monthly platform usage credits with no credit card required."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Firecrawl",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://github.com/firecrawl/firecrawl",
+          "source_type": "official_github",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:51:52.080Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Netlify",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:51:57.877Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Sentry",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://docs.sentry.io/api/",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:07.652Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Linear",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://linear.app/docs/api-and-webhooks",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:13.456Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Asana",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://developers.asana.com/docs/quick-start",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:15.324Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "ClickUp",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://developer.clickup.com/docs/authentication",
+          "source_type": "official_auth_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:19.434Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Smartsheet",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "paid_plan_required",
+      "evidence": [
+        {
+          "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:22.482Z",
+          "http_status": 200,
+          "statement": "The cached first-party source supports paid_plan_required: Required plan: Business, Enterprise, or Advanced Work Management Developer Agreement: The Developer Agreement governs the use of the Smartsheet API and Smartsheet software development kits (SDKs) 🚀 What&#x27;s new!"
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Brex",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://developer.brex.com/guides/authentication",
+          "source_type": "official_auth_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:41.326Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    },
+    {
+      "app": "Consensus",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://docs.consensus.app/api-reference/query-for-relevant-papers",
+          "source_type": "official_product_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:53:00.978Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": true
+    }
+  ],
+  "protected_changes": [
+    {
+      "app": "SE Ranking",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "paid_plan_required",
+      "evidence": [
+        {
+          "url": "https://seranking.com/api/how-to-get-api/",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:51:45.922Z",
+          "http_status": 200,
+          "statement": "The cached first-party source supports paid_plan_required: Credits included with your plan All Essential, Pro, Business, Core, Growth, and Enterprise plans include Data API access with a monthly credit allowance: Plan Included API credits (per month) Essential 10,000 Pro 25,000 Core 25,000 Business 100,000 Growth 100,000 Enterprise 100,000 Need more credits?"
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": false,
+      "protected_by_human": true,
+      "protection_reason": "The exact holdout proposal was human-approved; human adjudication takes precedence over an automatic sweep."
+    },
+    {
+      "app": "GitHub",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://docs.github.com/en/rest",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:51:58.864Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": false,
+      "protected_by_human": true,
+      "protection_reason": "An earlier human-approved calibration value is preserved."
+    },
+    {
+      "app": "Vercel",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "paid_plan_required",
+      "evidence": [
+        {
+          "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T10:00:44.567Z",
+          "http_status": 200,
+          "statement": "The cached first-party source supports paid_plan_required: Open Settings in the sidebar Navigate to Connectors and select Add custom connector Configure the connector: Name: Vercel URL: https://mcp.vercel.com ChatGPT Custom connectors using MCP are available on ChatGPT for Pro and Plus accounts on the web."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": false,
+      "protected_by_human": true,
+      "protection_reason": "An earlier human-approved calibration value is preserved."
+    },
+    {
+      "app": "Supabase",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://supabase.com/pricing",
+          "source_type": "official_product_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:00.756Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": false,
+      "protected_by_human": true,
+      "protection_reason": "The exact holdout proposal was human-approved; human adjudication takes precedence over an automatic sweep."
+    },
+    {
+      "app": "Neo4j",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://neo4j.com/docs/aura/api/overview/",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:03.700Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": false,
+      "protected_by_human": true,
+      "protection_reason": "The exact holdout proposal was human-approved; human adjudication takes precedence over an automatic sweep."
+    },
+    {
+      "app": "Datadog",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://docs.datadoghq.com/api/latest.md",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:06.853Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": false,
+      "protected_by_human": true,
+      "protection_reason": "The exact holdout proposal was human-approved; human adjudication takes precedence over an automatic sweep."
+    },
+    {
+      "app": "Notion",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://developers.notion.com/guides/get-started/overview",
+          "source_type": "official_product_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:10.334Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": false,
+      "protected_by_human": true,
+      "protection_reason": "An earlier human-approved calibration value is preserved."
+    },
+    {
+      "app": "Airtable",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "paid_plan_required",
+      "evidence": [
+        {
+          "url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+          "source_type": "official_product_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:31.275Z",
+          "http_status": 200,
+          "statement": "The cached first-party source supports paid_plan_required: The MCP integration is currently included with your current Airtable plan."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": false,
+      "protected_by_human": true,
+      "protection_reason": "The exact holdout proposal was human-approved; human adjudication takes precedence over an automatic sweep."
+    },
+    {
+      "app": "Harvest",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "usage_pricing",
+      "evidence": [
+        {
+          "url": "https://help.getharvest.com/api-v2/",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:23.444Z",
+          "http_status": 200,
+          "statement": "The cached first-party source supports usage_pricing: API Introduction Overview Postman Collection Code Samples Supported Time Zones Supported Currencies Pagination See all docs Authentication Authentication See all docs Clients API Client Contacts Clients See all docs Company Settings Company See all docs Invoices API Invoice Messages Invoice Payments Invoices Invoice Item Categories See all docs Estimates API Estimate Messages Estimates Estimate Item Categories See al"
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": false,
+      "protected_by_human": true,
+      "protection_reason": "The exact holdout proposal was human-approved; human adjudication takes precedence over an automatic sweep."
+    },
+    {
+      "app": "Reducto",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://docs.reducto.ai/quickstart",
+          "source_type": "official_product_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:53.973Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": false,
+      "protected_by_human": true,
+      "protection_reason": "The exact holdout proposal was human-approved; human adjudication takes precedence over an automatic sweep."
+    },
+    {
+      "app": "Devin",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "unknown",
+      "evidence": [
+        {
+          "url": "https://docs.devin.ai/api-reference/getting-started/teams-quickstart.md",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:53.963Z",
+          "http_status": 200,
+          "statement": "Cached first-party evidence does not explicitly establish an Enterprise-only requirement for meaningful API, MCP, or integration access."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": false,
+      "protected_by_human": true,
+      "protection_reason": "The exact holdout proposal was human-approved; human adjudication takes precedence over an automatic sweep."
+    },
+    {
+      "app": "Grain",
+      "field": "commercial_friction",
+      "old_value": "enterprise_plan_required",
+      "new_value": "paid_plan_required",
+      "evidence": [
+        {
+          "url": "https://support.grain.com/en/articles/15507288-grain-api",
+          "source_type": "official_api_docs",
+          "retrieval_method": "http",
+          "checked_at": "2026-08-28T09:52:59.169Z",
+          "http_status": 200,
+          "statement": "The cached first-party source supports paid_plan_required: Personal API access is available on Starter, Business, and Enterprise plans."
+        }
+      ],
+      "reason": "Enterprise-tier existence alone is not enough; the cached evidence supports the replacement value or cannot resolve the requirement.",
+      "applied": false,
+      "protected_by_human": true,
+      "protection_reason": "The exact holdout proposal was human-approved; human adjudication takes precedence over an automatic sweep."
+    }
+  ],
+  "reviewed_at": "2026-08-28T17:10:07.691Z"
+}
