@@ -75,6 +75,8 @@ The app is a standard Next.js project and can be deployed with an authorized Ver
 npx vercel deploy --yes --name composio-integration-audit
 ```
 
-Live preview: deployment pending
+Live case study: https://composio-integration-audit.vercel.app
+
+Source: https://github.com/Suraj-H675/composio-integration-audit
 
 The preview serves the generated compact presentation payload and frozen lock so the deployed bundle stays small; the local build path still verifies the complete frozen artifacts before generating that payload.
