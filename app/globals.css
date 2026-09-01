@@ -41,9 +41,7 @@ button { color: inherit; }
 .section-label { display: flex; align-items: center; color: var(--teal); font-size: 10px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
 .hero h1 { margin: 0 0 26px; max-width: 800px; font-size: clamp(48px, 6vw, 82px); line-height: .98; letter-spacing: -.065em; font-weight: 700; }
 .hero h1 span, h2 i { color: var(--teal); font-style: normal; }
-.hero-lede { margin: 0 0 14px; max-width: 570px; font-size: clamp(20px, 2.2vw, 27px); letter-spacing: -.025em; line-height: 1.2; }
 .hero-support { max-width: 555px; margin: 0; color: var(--ink-soft); font-size: 16px; line-height: 1.65; }
-.hero-actions { display: flex; align-items: center; gap: 24px; margin-top: 35px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 17px; border: 0; border-radius: 999px; cursor: pointer; font-size: 12px; font-weight: 800; letter-spacing: .01em; padding: 13px 18px; transition: transform .18s ease, background .18s ease, color .18s ease; }
 .button:hover { transform: translateY(-2px); }
 .button:disabled { cursor: wait; opacity: .58; transform: none; }
@@ -51,8 +49,6 @@ button { color: inherit; }
 .button.primary:hover { background: var(--teal); }
 .button.outline { border: 1px solid var(--line-strong); background: transparent; color: var(--ink); }
 .button.outline:hover { background: var(--ink); color: var(--paper); }
-.text-button { padding-left: 0; padding-right: 0; background: transparent; color: var(--ink-soft); }
-.text-button:hover { color: var(--teal); }
 .hero-aside { padding: 26px 0 0; border-top: 1px solid var(--ink); }
 .aside-kicker, .eyebrow, .overline { color: var(--ink-soft); font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .lens-row { display: grid; grid-template-columns: 1fr; gap: 5px; padding: 22px 0 18px; border-bottom: 1px solid var(--line); color: var(--ink-soft); }
@@ -83,9 +79,7 @@ h2 { margin: 18px 0 0; font-size: clamp(40px, 5vw, 67px); line-height: .98; lett
 .customer-gate { background: #e3f0eb; }
 .distribution-gate { background: #f5e9dc; }
 .gate-number { color: var(--ink-soft); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
-.gate-icon { position: absolute; top: 20px; right: 24px; color: var(--teal); font-size: 29px; line-height: 1; }
-.distribution-gate .gate-icon { color: var(--orange); }
-.gate-card h3 { max-width: 230px; margin: 55px 0 9px; font-size: 25px; line-height: 1.05; letter-spacing: -.045em; }
+.gate-card h3 { max-width: 230px; margin: 44px 0 9px; font-size: 25px; line-height: 1.05; letter-spacing: -.045em; }
 .gate-card p { max-width: 290px; margin: 0; color: var(--ink-soft); font-size: 13px; }
 .gate-stat { display: flex; align-items: baseline; gap: 10px; margin-top: 28px; }
 .gate-stat strong { font-size: 34px; letter-spacing: -.06em; }
@@ -190,7 +184,7 @@ details summary { cursor: pointer; color: var(--ink); font-size: 12px; font-weig
 
 @media (max-width: 720px) {
   .section-shell, .topbar { width: min(100% - 36px, 560px); }.topbar { height: 65px; }.topnav { display: none; }.dataset-chip { padding: 7px 8px; font-size: 9px; }.brand em { display: none; }
-  .hero { min-height: 0; padding: 72px 0 78px; display: block; }.hero h1 { margin-top: 0; font-size: clamp(47px, 14vw, 72px); }.hero-lede { font-size: 21px; }.hero-support { font-size: 14px; }.hero-actions { align-items: flex-start; flex-direction: column; gap: 14px; margin-top: 27px; }.hero-aside { margin-top: 66px; }
+  .hero { min-height: 0; padding: 72px 0 78px; display: block; }.hero h1 { margin-top: 0; font-size: clamp(47px, 14vw, 72px); }.hero-support { font-size: 14px; }.hero-aside { margin-top: 66px; }
   .metric-strip { grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 90px; }.metric-card { min-height: 118px; padding: 17px 15px; }.metric-value { font-size: 36px; }.metric-label { margin-top: 13px; }
   .insight-section, .mcp-section, .action-section, .category-section, .method-section, .verification-section, .explorer-section { padding-bottom: 92px; }.split-intro { display: block; }.split-intro > p { margin-top: 25px; font-size: 14px; }.section-intro { margin-bottom: 30px; }h2 { font-size: 45px; }
   .gate-grid { display: block; }.gate-card { min-height: 230px; }.gate-card h3 { margin-top: 35px; }.gate-connector { height: 61px; flex-direction: row; justify-content: center; gap: 9px; }.gate-connector b { margin: 0; transform: rotate(90deg); }.legend-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }.breakdown-head { display: block; }.small-note { display: block; margin-top: 9px; }
