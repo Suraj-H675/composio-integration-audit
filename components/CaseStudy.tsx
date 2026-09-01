@@ -290,7 +290,6 @@ export default function CaseStudy({ data }: { data: PresentationData }) {
     <header className="topbar">
       <a className="brand" href="#top" aria-label="Composio integration audit home"><span className="brand-mark">/</span><span>COMPOSIO</span><em>PRODUCT OPS</em></a>
       <nav className="topnav" aria-label="Page navigation"><a href="#insight">Findings</a><a href="#opportunities">Action</a><a href="#explore">{data.dataset.appCount} apps</a><a href="#method">Method</a></nav>
-      <span className="dataset-chip">FINAL / V2 <i /> {data.dataset.appCount} APPS</span>
     </header>
 
     <section className="hero section-shell" id="top">
