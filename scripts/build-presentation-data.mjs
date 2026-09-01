@@ -109,9 +109,9 @@ function buildPayload({ lock, metrics, apps, presentationMetrics }) {
       mainBlocker: "Main blocker"
     },
     methodology: {
-      thesis: "Most integrations are technically possible. Distribution is the real bottleneck.",
+      thesis: "100-app integration audit covering buildability, access, APIs, MCP, and Composio coverage.",
       evidence: "Claims were preserved from the frozen evidence ledger; this presentation layer does not perform research or change classifications.",
-      unknowns: "Unknown remains a deliberate outcome when the frozen evidence could not support a stronger classification.",
+      unknowns: "Unknown is retained when frozen evidence does not support a stronger classification.",
       legacy: "Legacy production_access and credential_access remain auditable but do not drive the final Product Ops recommendations."
     }
   };
