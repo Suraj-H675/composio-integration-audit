@@ -1,6 +1,6 @@
 # Build plan
 
-Status: final v2 research dataset frozen after human adjudication and cache-only consistency validation; the final case-study presentation has not started
+Status: final v2 research dataset frozen after human adjudication and cache-only consistency validation; final case-study presentation implemented, validated, and deployed.
 
 - [x] Define the assignment schema, enums, evidence requirements, and preregistered accuracy method.
 - [x] Implement cached, resumable first-party evidence collection and bounded discovery.

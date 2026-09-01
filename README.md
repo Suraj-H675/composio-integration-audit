@@ -1,4 +1,4 @@
-# Agent Buildability Audit
+# Composio Integration Audit
 
 An evidence-first Product Ops case study for the Composio AI Product Ops Intern take-home. It audits 100 apps across 10 categories and separates four decisions that are easy to conflate:
 
@@ -45,6 +45,20 @@ manifest → identity resolution → first-party evidence → claims
 ```
 
 Each final claim keeps field-level evidence, source type, retrieval method, timestamp, and confidence. HTTP retrieval is attempted first; local Playwright is used only for justified browser fallbacks. Composio coverage is recorded as a separate catalog observation and is never treated as vendor MCP ownership.
+
+## Research pipeline
+
+`src/full_run.mjs` is the evidence-first collector: it loads the canonical manifest, discovers first-party sources, retrieves cached evidence, classifies claims, validates records, and runs verification stages. `src/schema_repair.mjs` is the later deterministic v1→v2 schema-repair and finalization stage. The existing `full-run` alias remains pointed at that finalization stage for compatibility; it is not the reviewer smoke test.
+
+To safely exercise the collector without launching a live crawl:
+
+```bash
+npm run research:dry
+```
+
+This smoke test parses the exact 100-app manifest, checks uniqueness and required discovery metadata, validates cache paths, initializes the evidence/source adapters and Composio adapter, initializes the Playwright fallback, and checks the retry, resumability, and failure-isolation path. It prints `dry_run: true`, `app_count: 100`, `unique_apps: 100`, and adapter/queue status. It does not run the full 100-app live research process, does not mutate the frozen final dataset, and requires no paid service.
+
+Running `src/full_run.mjs` without `--dry-run` is the historical live collection path and can require external network access and relevant environment configuration. The committed frozen snapshot is the reproducible artifact used by the case study, so reviewers do not need to run live research to inspect or build the submission.
 
 The case study adds two read-only proof routes:
 

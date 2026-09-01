@@ -9,6 +9,7 @@
     "start": "next start",
     "test": "node --test",
     "calibrate": "node src/calibrate.mjs",
+    "research:dry": "node src/full_run.mjs --dry-run",
     "full-run": "node src/schema_repair.mjs",
     "full-run:dry": "node src/schema_repair.mjs --dry-run",
     "schema-repair": "node src/schema_repair.mjs",
